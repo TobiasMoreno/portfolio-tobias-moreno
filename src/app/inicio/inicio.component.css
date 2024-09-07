@@ -23,7 +23,8 @@ button {
   color: #000;
   font-size: 18px;
   padding: 5px 30px;
-  transition: background-position 0.35s ease-out, color 0.35s ease-out, border-color 0.35s ease-out;
+  transition: background-position 0.35s ease-out, color 0.35s ease-out,
+    border-color 0.35s ease-out;
 }
 
 button:hover {
@@ -33,11 +34,12 @@ button:hover {
   color: #fff;
 }
 
-button:focus{
+button:focus {
   outline: none;
   background-color: #fff;
   background-position: 0 0;
   color: #000;
   border-color: #000;
-  box-shadow: 0 0 5px #ffffff; 
+  box-shadow: 0 0 5px #ffffff;
 }
+
