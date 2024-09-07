@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Landing page in Angular",
+    "path": "https://landing-page-angular-17-tobias-moreno.netlify.app",
+    "description": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+    "image": "assets/img/landing-page-angular-17.png",
+    "github": "https://github.com/TobiasMoreno/Landing-Page-Angular-17"
+  },
+  {
+    "title": "Calculator in Angular",
+    "path": "https://calculator-angular-tobias-moreno.netlify.app",
+    "description": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+    "image": "assets/img/calculator-angular.png",
+    "github": "https://github.com/TobiasMoreno/angular-calculator"
+  },
+  {
+    "title": "E-Commerce",
+    "path": "https://toro-wine-tobias-moreno.netlify.app",
+    "description": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+    "image": "assets/img/toro-wine.png",
+    "github": "https://github.com/TobiasMoreno/ToroWine"
+  },
+  {
+    "title": "Black Bull E-Commerce",
+    "path": "https://e-commerce-tobias-moreno-freelancer.netlify.app",
+    "description": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+    "image": "assets/img/black-bull.png",
+    "github": "https://github.com/TobiasMoreno/ECommerce"
+  },
+  {
+    "title": "Blog de Cafe",
+    "path": "https://blog-de-cafe-tobias-moreno.netlify.app",
+    "description": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+    "image": "assets/img/blog-cafe.png"
+  },
+  {
+    "title": "Store",
+    "path": "https://tobias-moreno-store-freelancer.netlify.app",
+    "description": "Some quick example text to build on the card title and make up the bulk of the cards content.",
+    "image": "assets/img/store.png",
+    "github": "https://github.com/TobiasMoreno/Store"
+  }
+]

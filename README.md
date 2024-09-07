@@ -1,27 +1,88 @@
-# PersonalPages
+# Portafolio de Proyectos Personales
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+Este es un portafolio de proyectos personales desarrollado con Angular, que muestra diversas aplicaciones que he creado. El portafolio incluye detalles de los proyectos, como títulos, descripciones y enlaces a las páginas y a los repositorios de GitHub.
 
-## Development server
+## Tabla de Contenidos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Descripción General](#descripción-general)
+- [Características](#características)
+- [Instalación](#instalación)
+- [Ejecutar la Aplicación](#ejecutar-la-aplicación)
+- [Estructura del Proyecto](#estructura-del-proyecto)
+- [Tecnologías](#tecnologías)
+- [Contribuciones](#contribuciones)
+- [Licencia](#licencia)
 
-## Code scaffolding
+## Descripción General
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Este proyecto sirve como una colección de proyectos personales que demuestran mis habilidades en desarrollo frontend utilizando Angular. Cada proyecto en el portafolio incluye:
 
-## Build
+- Título del proyecto
+- Breve descripción
+- Enlace a la demo en vivo
+- Enlace al repositorio de GitHub
+- Imagen de vista previa
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Características
 
-## Running unit tests
+- Diseño responsivo utilizando Bootstrap.
+- Lista organizada de proyectos con títulos, descripciones y enlaces externos.
+- Navegación fácil a cada demo en vivo y al código fuente en GitHub.
+- Archivo JSON para gestionar los datos de los proyectos, lo que facilita actualizaciones y escalabilidad.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Instalación
 
-## Running end-to-end tests
+Para ejecutar este proyecto localmente, sigue estos pasos:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+1. **Clona el repositorio:**
 
-## Further help
+   ````bash
+   git clone https://github.com/TobiasMoreno/tu-repo.git
+2. **Navegar al directorio del proyecto:**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ```bash
+   cd tu repo
+   ````
+3. **Instalar dependencias:**
+
+    Ejecuta el siguiente comando para instalar las dependencias necesarias:
+   ```bash
+   npm install
+   ````
+3. **Ejecución:**
+
+    Para ejecutar la aplicación localmente, usa el siguiente comando:
+   ```bash
+   ng serve
+   ````
+   Luego abre tu navegador y ve a http://localhost:4200/ para ver la aplicación en acción.
+
+## Estructura del proyecto
+````
+src/
+├── app/
+│   ├── components/
+│   │   ├── project-list/
+│   │   │   ├── project-list.component.ts
+│   │   │   ├── project-list.component.html
+│   │   │   ├── project-list.component.css
+│   │
+│   ├── services/
+│   │   └── pages.service.ts
+│   │
+│   └── app.component.ts
+│
+├── assets/
+│   ├── img/               # Contiene las imágenes de los proyectos
+│   └── data/
+│       └── projects.json   # Contiene la lista de proyectos
+│
+└── environments/
+````
+
+## Tecnologías Utilizadas
+- Angular: Framework principal utilizado para el desarrollo.
+- Bootstrap: Utilizado para estilos y diseño responsivo.
+- RxJS: Manejo de flujos asíncronos.
+- JSON: Archivo para almacenar y cargar la lista de proyectos.
+- Netlify: Para el despliegue de la aplicación en línea.

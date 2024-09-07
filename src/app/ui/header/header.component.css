@@ -1,0 +1,11 @@
+nav, .offcanvas{
+    background-color: #1e293b;
+}
+.navbar-toggler{
+    border: none;
+}
+@media (max-width: 768px) {
+    .navbar-nav > li:hoverr{
+        background-color: #0dcaf0;
+    }
+}
