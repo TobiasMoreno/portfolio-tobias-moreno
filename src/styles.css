@@ -1,7 +1,13 @@
-body{
-    background-image: url('../public/assets/img/bg-image.png');
+body {
+  background-image: url("../public/assets/img/bg-image.png");
 }
 b,
-span{
-    color: #96085b;;
+span {
+  color: #96085b;
+}
+:root {
+  scroll-behavior:smooth;
+}
+h1{
+  padding-top: 65px;
 }

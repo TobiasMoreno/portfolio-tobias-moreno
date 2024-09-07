@@ -1,3 +1,5 @@
+<h1 class="text-center" id="proyectos"><b>Proye</b>ctos</h1>
+
 <div class="row text-dark">
   @for(project of projects.state().projects; track project) {
   <div class="col-md-6 col-lg-4 d-flex justify-content-center">
@@ -13,7 +15,7 @@
           {{ project.description }}
         </p>
         <div class="d-flex justify-content-center gap-2 m-2">
-          <a href="{{ project.path }}" target="_blank" class="btn btn-primary">
+          <a href="{{ project.path }}" target="_blank" class="btn btn-custom text-white">
             <i class="bi bi-link-45deg"></i>   Página
           </a>
           <a href="{{ project.github }}" target="_blank" class="btn btn-dark"

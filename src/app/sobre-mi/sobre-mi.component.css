@@ -1,5 +1,5 @@
 h1{
-    margin-bottom: 50px;
+    padding-top: 65px;
 }
 p{
     margin-bottom: 35px;
@@ -7,3 +7,9 @@ p{
 section{
     width: 60%;
 }
+
+@media (max-width: 768px) {
+    section {
+      width: 80%;
+    }
+  }

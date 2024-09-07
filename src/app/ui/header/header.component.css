@@ -1,10 +1,25 @@
-nav, .offcanvas{
-    background-color: #1e293b;
+nav,
+.offcanvas {
+  background-color: #1e293b;
 }
-.navbar-toggler{
-    border: none;
+.navbar-toggler {
+  border: none;
+}
+a:hover {
+  cursor: pointer;
+}
+nav{
+    background-color: #d9d9d9d5;;
+}
+a{
+    font-size: 20px;
+}
+.hide-on-mobile {
+  display: block;
 }
 
-a:hover{
-    cursor: pointer ;
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
