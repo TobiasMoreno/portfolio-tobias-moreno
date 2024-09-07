@@ -1,3 +1,11 @@
-*{
-    background-image: url('/public/assets/img/bg-image.png');
+.card-img-top {
+  transition: transform 0.3s ease;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+.card{
+    border-color: black;
+    padding: 15px;
 }

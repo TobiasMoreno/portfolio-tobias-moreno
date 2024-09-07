@@ -1,0 +1,33 @@
+img {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  border-top-left-radius: 20%;
+}
+.section-inicio {
+  height: 100vh;
+  width: 100%;
+}
+h1 {
+  font-size: 70px;
+}
+h2 {
+  font-size: 40px;
+}
+button {
+  background: linear-gradient(to top, #fff 50%, transparent 50%);
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  border: 1px solid #000;
+  border-radius: 10px;
+  color: #000;
+  font-size: 18px;
+  padding: 5px 30px;
+  transition: background-position 0.35s ease-out;
+}
+
+button:hover {
+  background-color: #000;
+  background-position: 0 0;
+  color: #fff;
+}
