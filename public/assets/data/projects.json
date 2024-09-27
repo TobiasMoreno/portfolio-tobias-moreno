@@ -7,6 +7,13 @@
     "github": "https://github.com/TobiasMoreno/e-commerce-angular"
   },
   {
+    "title": "Lider Trofeos",
+    "path": "https://lider-trofeos.netlify.app",
+    "description": "Pagina Web desarrollada con Angular para una empresa. Es completamente responsive, asegurando una increíble experiencia de usuario",
+    "image": "assets/img/lider-trofeos.avif",
+    "github": "https://github.com/TobiasMoreno/lider-trofeos"
+  },
+  {
     "title": "Landing page in Angular",
     "path": "https://landing-page-angular-17-tobias-moreno.netlify.app",
     "description": "E-commerce creado en Angular 17 con TypeScript y Bootstrap. Ofrece una lista completa de productos y asegura una excelente experiencia de usuario.",
@@ -47,4 +54,6 @@
     "image": "assets/img/store.png",
     "github": "https://github.com/TobiasMoreno/Store"
   }
+  
+  
 ]
