@@ -5,15 +5,23 @@ import { ProjectListComponent } from './projects/project-list/project-list.compo
 import { HeaderComponent } from './ui/header/header.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
+import { RecorridoComponent } from './recorrido/recorrido.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,FooterComponent,HeaderComponent, ProjectListComponent, InicioComponent, SobreMiComponent],
+  imports: [
+    RouterOutlet,
+    FooterComponent,
+    HeaderComponent,
+    ProjectListComponent,
+    InicioComponent,
+    SobreMiComponent,
+    RecorridoComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'personal-pages';
-  
 }

@@ -37,7 +37,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 1. **Clona el repositorio:**
 
    ````bash
-   git clone https://github.com/TobiasMoreno/tu-repo.git
+   git clone https://github.com/TobiasMoreno/personal-pages-angular.git
 2. **Navegar al directorio del proyecto:**
 
    ```bash
@@ -59,6 +59,13 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 
 ## Estructura del proyecto
 ````
+
+public
+├── assets/
+│   ├── img/               # Contiene las imágenes de los proyectos
+│   └── data/
+│       └── projects.json   # Contiene la lista de proyectos
+│
 src/
 ├── app/
 │   ├── components/
@@ -71,11 +78,6 @@ src/
 │   │   └── pages.service.ts
 │   │
 │   └── app.component.ts
-│
-├── assets/
-│   ├── img/               # Contiene las imágenes de los proyectos
-│   └── data/
-│       └── projects.json   # Contiene la lista de proyectos
 │
 └── environments/
 ````

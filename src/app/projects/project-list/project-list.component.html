@@ -14,15 +14,19 @@
         <p class="card-text text-center">
           {{ project.description }}
         </p>
-        <div class="d-flex justify-content-center gap-2 m-2">
-          <a href="{{ project.path }}" target="_blank" class="btn btn-custom text-white">
-            <i class="bi bi-link-45deg"></i>   Página
-          </a>
-          <a href="{{ project.github }}" target="_blank" class="btn btn-dark"
-            ><i class="bi bi-github"></i>
-            GitHub
-          </a>
-        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <a
+          href="{{ project.path }}"
+          target="_blank"
+          class="btn btn-custom text-white m-1"
+        >
+          <i class="bi bi-link-45deg"></i> Página
+        </a>
+        <a href="{{ project.github }}" target="_blank" class="btn btn-dark m-1"
+          ><i class="bi bi-github"></i>
+          GitHub
+        </a>
       </div>
     </div>
   </div>

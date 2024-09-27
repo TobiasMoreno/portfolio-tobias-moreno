@@ -4,9 +4,6 @@ h1{
 p{
     margin-bottom: 35px;
 }
-section{
-    width: 60%;
-}
 
 @media (max-width: 768px) {
     section {
