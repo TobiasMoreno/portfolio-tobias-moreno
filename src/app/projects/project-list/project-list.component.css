@@ -1,7 +1,7 @@
 .project-card {
   background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px 0 rgba(151, 156, 224, 0.2);
   backdrop-filter: blur(8.5px);
   -webkit-backdrop-filter: blur(8.5px);
   border: 1px solid rgba(255, 255, 255, 0.18);
@@ -9,42 +9,19 @@
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
 .btn-custom {
   background: linear-gradient(to right, #5816ff, #cf1512);
   border: none;
+  background-size: 200% 100%;
+  transition: background-position 0.3s ease, transform 0.3s ease;
 }
 
 .btn-custom:hover {
-  background: linear-gradient(to left, #cf1512, #5816ff);
-  box-shadow: 0 0 10px #cf1512;
-}
-
-.gradient-text {
-  background: linear-gradient(to right, #5816ff, #cf1512);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.btn-custom {
-  background-color: #96085b;
-  transition: transform 0.3s ease;
-}
-
-.btn-custom:hover {
-  transform: translateY(-5px);
-}
-
-.btn-dark {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: box-shadow 0.3s ease;
-  transition: transform 0.3s ease;
-}
-
-.btn-dark:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  background-position: right;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 4px #cf1512;
+  text-shadow: 0 0 5px #fff, 0 0 10px #cf1512; /*Este no me convence tanto*/
 }

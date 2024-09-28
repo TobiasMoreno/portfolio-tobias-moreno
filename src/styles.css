@@ -44,3 +44,34 @@ background: linear-gradient(to right, #CF1512 0%, #5816FF 100%);
 -webkit-text-fill-color: transparent;
 }
 
+button, .btn {
+  background: transparent;
+  border: 1px solid #000;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #212529;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 5px 30px;
+  text-align: center;
+  text-decoration: none;
+  transition: background-position 0.35s ease-out, color 0.35s ease-out,
+    border-color 0.5s ease-out;
+}
+
+button:hover, .btn:hover {
+  box-shadow: inset 0 -100px 0 0 #212529;
+  border-color: #000;
+  color: #fff;
+}
+
+button:focus, btn:focus {
+  outline: none;
+  background-color: #fff;
+  background-position: 0 100%;
+  color: #000;
+  border-color: #000;
+  box-shadow: 0 0 0 0#000;
+}
