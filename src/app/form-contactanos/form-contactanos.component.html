@@ -4,8 +4,10 @@
     <label for="nombre" class="form-label">Nombre:</label>
     <input
       type="text"
-      class="form-control"
+      name="nombre"
       id="nombre"
+      class="form-control"
+      placeholder="Ingrese su nombre"
       formControlName="nombre"
     />
   </div>
@@ -16,10 +18,11 @@
     <label for="email" class="form-label">Email:</label>
     <input
       type="email"
-      class="form-control form-outline mb-4"
+      name="email"
       id="email"
+      class="form-control form-outline mb-4"
       formControlName="email"
-      data-mdb-input-init
+      placeholder="Ingrese su Email"
     />
   </div>
   @if (isRequired('email') ) {
@@ -28,12 +31,28 @@
   <small class="text-danger">Email no válido</small>
   }
   <div class="mb-3">
+    <label for="asuntoEmail" class="form-label">Asunto del Mensaje</label>
+    <input
+      type="text"
+      name="asuntoEmail"
+      id="asuntoEmail"
+      class="form-control"
+      placeholder="Ingrese su nombre"
+      formControlName="asuntoEmail"
+    />
+  </div>
+  @if (isRequired('nombre') ) {
+  <small class="text-danger">El nombre es requerido</small>
+  }
+  <div class="mb-3">
     <label for="mensaje" class="form-label">Mensaje:</label>
     <textarea
-      id="mensaje"
+      type="text"
       name="mensaje"
+      id="mensaje"
       class="form-control"
       formControlName="mensaje"
+      placeholder="Ingrese su comentario"
     ></textarea>
     @if (isRequired('mensaje') ) {
     <small class="text-danger"
@@ -44,3 +63,4 @@
 
   <button class="btn btn-primary" type="submit">Enviar</button>
 </form>
+<ngx-sonner-toaster/>
