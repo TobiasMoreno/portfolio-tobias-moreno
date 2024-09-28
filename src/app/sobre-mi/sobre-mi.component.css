@@ -1,12 +1,12 @@
 h1{
-    padding-top: 65px;
+  padding-top: 65px;
 }
 p{
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 }
 
 @media (max-width: 768px) {
-    section {
-      width: 80%;
-    }
+  section {
+    width: 80%;
   }
+}

@@ -1,16 +1,16 @@
-<h1 class="text-center gradient-text" id="proyectos">Proyectos</h1>
+<h1 class="text-center gradient-text-reverse" id="proyectos">Proyectos</h1>
 
 <div class="row text-dark">
   @for(project of projects.state().projects; track project) {
   <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card m-3" style="width: 300px">
+    <div class="card m-3 project-card" style="width: 300px">
       <img
         src="{{ project.image }}"
         class="card-img-top"
         alt="{{ project.title }}"
       />
       <div class="card-body">
-        <h5 class="card-title text-center">{{ project.title }}</h5>
+        <h5 class="card-title text-center gradient-text">{{ project.title }}</h5>
         <p class="card-text text-center">
           {{ project.description }}
         </p>
@@ -23,7 +23,7 @@
         >
           <i class="bi bi-link-45deg"></i> Página
         </a>
-        <a href="{{ project.github }}" target="_blank" class="btn btn-dark m-1"
+        <a href="{{ project.github }}" target="_blank" class="btn btn-dark m-1 btn-github"
           ><i class="bi bi-github"></i>
           GitHub
         </a>

@@ -1,30 +1,50 @@
-.card-img-top,
-.btn {
-  transition: transform 0.3s ease;
+.project-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card-img-top:hover,
-.btn:hover {
-  transform: scale(1.05);
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
-.card {
-  border-color: black;
-  padding: 15px;
-}
+
 .btn-custom {
-  background-color: #96085b;
+  background: linear-gradient(to right, #5816ff, #cf1512);
+  border: none;
 }
-.btn:focus {
-  outline: none;
-  color: #fff;
-  box-shadow: 0 0 5px #ffffff;
+
+.btn-custom:hover {
+  background: linear-gradient(to left, #cf1512, #5816ff);
+  box-shadow: 0 0 10px #cf1512;
 }
+
 .gradient-text {
-  background: #121fcf;
-  background: linear-gradient(to right, #5816ff 0%, #cf1512 100%);
+  background: linear-gradient(to right, #5816ff, #cf1512);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-img:hover{
-  cursor: pointer;
+
+.btn-custom {
+  background-color: #96085b;
+  transition: transform 0.3s ease;
+}
+
+.btn-custom:hover {
+  transform: translateY(-5px);
+}
+
+.btn-dark {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease;
+}
+
+.btn-dark:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }

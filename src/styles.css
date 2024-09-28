@@ -30,14 +30,17 @@ h1{
 }
 
 .gradient-text {
-  background: #121FCF;
-background: linear-gradient(to right, #5816FF 0%, #CF1512 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+  animation: gradientShift 5s infinite alternate;
+  background: linear-gradient(to right, #5816ff, #cf1512);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+
 .gradient-text-reverse{
   background: #121FCF;
 background: linear-gradient(to right, #CF1512 0%, #5816FF 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
 }
+
