@@ -1,0 +1,46 @@
+<h1 class="text-center" id="contacto">Contactame</h1>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <div class="mb-3">
+    <label for="nombre" class="form-label">Nombre:</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nombre"
+      formControlName="nombre"
+    />
+  </div>
+  @if (isRequired('nombre') ) {
+  <small class="text-danger">El nombre es requerido</small>
+  }
+  <div class="mb-3">
+    <label for="email" class="form-label">Email:</label>
+    <input
+      type="email"
+      class="form-control form-outline mb-4"
+      id="email"
+      formControlName="email"
+      data-mdb-input-init
+    />
+  </div>
+  @if (isRequired('email') ) {
+  <small class="text-danger">El email es requerido</small>
+  } @if (hasEmailError()) {
+  <small class="text-danger">Email no válido</small>
+  }
+  <div class="mb-3">
+    <label for="mensaje" class="form-label">Mensaje:</label>
+    <textarea
+      id="mensaje"
+      name="mensaje"
+      class="form-control"
+      formControlName="mensaje"
+    ></textarea>
+    @if (isRequired('mensaje') ) {
+    <small class="text-danger"
+      >Debe enviar minimamente un mensaje de 10 caracteres.</small
+    >
+    }
+  </div>
+
+  <button class="btn btn-primary" type="submit">Enviar</button>
+</form>
