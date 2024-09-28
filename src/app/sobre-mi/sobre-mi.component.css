@@ -10,3 +10,15 @@ p{
     width: 80%;
   }
 }
+
+.badge {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.bg-gradient {
+  background: linear-gradient(to right, #5816ff, #cf1512) !important; 
+}

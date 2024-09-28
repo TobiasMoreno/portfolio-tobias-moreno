@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './inicio.component.css'
 })
 export class InicioComponent {
-
+  openCV() {
+    window.open('https://drive.google.com/file/d/1CVj8CjdPSItd1qcKQpO7Hpu6bb98BKRB/view?usp=sharing', '_blank');
+  }
 }
