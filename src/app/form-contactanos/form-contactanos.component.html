@@ -1,7 +1,7 @@
-<h1 class="text-center" id="contacto">Contactame</h1>
+<h1 class="text-center gradient-text" id="contacto">Contactame</h1>
 <form [formGroup]="form" (ngSubmit)="submit()">
   <div class="mb-3">
-    <label for="nombre" class="form-label">Nombre:</label>
+    <label for="nombre" class="form-label">Nombre</label>
     <input
       type="text"
       name="nombre"
@@ -15,7 +15,7 @@
   <small class="text-danger">El nombre es requerido</small>
   }
   <div class="mb-3">
-    <label for="email" class="form-label">Email:</label>
+    <label for="email" class="form-label">Email</label>
     <input
       type="email"
       name="email"
@@ -41,11 +41,21 @@
       formControlName="asuntoEmail"
     />
   </div>
-  @if (isRequired('nombre') ) {
-  <small class="text-danger">El nombre es requerido</small>
+  @if (isRequired('asuntoEmail') ) {
+  <small class="text-danger">El Asunto del mensaje es requerido</small>
+  } @if (form.get('asuntoEmail')?.hasError('minLength') ) {
+  <small
+    class="text-danger"
+    >{{form.get('asuntoEmail')?.errors?.['minLength']}}</small
+  >
+  } @if (form.get('asuntoEmail')?.hasError('maxLength') ) {
+  <small
+    class="text-danger"
+    >{{form.get('asuntoEmail')?.errors?.['maxLength']}}</small
+  >
   }
   <div class="mb-3">
-    <label for="mensaje" class="form-label">Mensaje:</label>
+    <label for="mensaje" class="form-label">Mensaje</label>
     <textarea
       type="text"
       name="mensaje"
@@ -55,12 +65,23 @@
       placeholder="Ingrese su comentario"
     ></textarea>
     @if (isRequired('mensaje') ) {
-    <small class="text-danger"
-      >Debe enviar minimamente un mensaje de 10 caracteres.</small
+    <small class="text-danger">El mensaje es requerido</small>
+    } @if (form.get('mensaje')?.hasError('minLength') ) {
+    <small
+      class="text-danger"
+      >{{form.get('mensaje')?.errors?.['minLength']}}</small
+    >
+    } @if (form.get('mensaje')?.hasError('maxLength') ) {
+    <small
+      class="text-danger"
+      >{{form.get('mensaje')?.errors?.['maxLength']}}</small
     >
     }
   </div>
+  <div class="d-flex">
+    <button class="btn btn-success me-auto" type="submit">Enviar</button>
+    <button class="btn btn-secondary ms-auto" type="reset">Cancelar</button>
+</div>
 
-  <button class="btn btn-primary" type="submit">Enviar</button>
 </form>
-<ngx-sonner-toaster/>
+<ngx-sonner-toaster />

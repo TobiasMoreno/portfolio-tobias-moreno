@@ -6,7 +6,12 @@ import {
   Validators,
 } from '@angular/forms';
 import { NgxSonnerToaster, toast } from 'ngx-sonner';
-import { hasEmailError, isRequired } from './validators';
+import {
+  hasEmailError,
+  hasMaxLength,
+  hasMinLength,
+  isRequired,
+} from './validators';
 import emailjs from '@emailjs/browser';
 import { environment } from '../../environments/enviroment';
 
@@ -35,11 +40,13 @@ export class FormContactanosComponent {
     ]),
     mensaje: this._formBuilder.control('', [
       Validators.required,
-      Validators.minLength(10),
+      hasMinLength(10),
+      hasMaxLength(300),
     ]),
     asuntoEmail: this._formBuilder.control('', [
       Validators.required,
-      Validators.minLength(10),
+      hasMinLength(10),
+      hasMaxLength(40),
     ]),
   });
 
@@ -50,15 +57,15 @@ export class FormContactanosComponent {
     }
     emailjs.init(environment.API_KEY_EMAILJS);
     await emailjs.send('service_vlnpsqq', 'template_ix8q55z', {
-      asuntoEmail: this.form.value.asuntoEmail,
       nombre: this.form.value.nombre,
       email: this.form.value.email,
+      asuntoEmail: this.form.value.asuntoEmail,
       mensaje: this.form.value.mensaje,
     });
     toast.success('Enviado');
     this.form.reset();
   }
-  isRequired(field: 'email' | 'nombre' | 'mensaje') {
+  isRequired(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail') {
     return isRequired(field, this.form);
   }
 
