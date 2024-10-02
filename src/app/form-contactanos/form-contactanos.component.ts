@@ -32,6 +32,9 @@ export interface SubmitForm {
 export class FormContactanosComponent {
   private _formBuilder = inject(FormBuilder);
 
+  lastSentTime: number | null = null;
+  coolDownPeriod  = 60000 // 1 minuto
+
   form = this._formBuilder.group<SubmitForm>({
     nombre: this._formBuilder.control('', [Validators.required]),
     email: this._formBuilder.control('', [
@@ -51,6 +54,14 @@ export class FormContactanosComponent {
   });
 
   async submit() {
+
+    const now = Date.now()
+
+    if(this.lastSentTime && (now -this.lastSentTime < this.coolDownPeriod)){
+      toast.error('Debes esperar 1 minuto antes de enviar otro mensaje');
+      return;
+    }
+
     if (!this.form.valid) {
       toast.error('Error al Enviar Formulario');
       return;
@@ -63,6 +74,7 @@ export class FormContactanosComponent {
       mensaje: this.form.value.mensaje,
     });
     toast.success('Enviado');
+    this.lastSentTime = Date.now();
     this.form.reset();
   }
   isRequired(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail') {
