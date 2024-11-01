@@ -1,5 +1,12 @@
 [
   {
+    "title": "Sistema de Gestion de Recursos Humanos",
+    "path": "https://hr-management-tobias-moreno.netlify.app/",
+    "description": "Sistema de gestión de recursos humanos en inglés desarrollado con Angular y Spring Boot. Permite la gestión de empleados, procesos de contratación, y seguimiento de ausencias. Todo con un enfoque en la eficiencia y usabilidad.",
+    "image": "assets/img/hr-system.png",
+    "github": "https://github.com/TobiasMoreno/hr-management-system"
+  },
+  {
     "title": "Portafolio",
     "path": "https://portfolio-tobias-moreno.netlify.app/",
     "description": "Portafolio desarrollado en Angular 18, utilizando TypeScript y Bootstrap. Es completamente responsive, incluye todos los proyectos que he creado, mi recorrido y un formulario de contacto.",
