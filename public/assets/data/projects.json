@@ -1,5 +1,12 @@
 [
   {
+    "title": "Portafolio",
+    "path": "https://portfolio-tobias-moreno.netlify.app/",
+    "description": "Portafolio desarrollado en Angular 18, utilizando TypeScript y Bootstrap. Es completamente responsive, incluye todos los proyectos que he creado, mi recorrido y un formulario de contacto.",
+    "image": "assets/img/portfolio.png",
+    "github": "https://github.com/TobiasMoreno/portfolio-tobias-moreno"
+  },
+  {
     "title": "E-Commerce in Angular",
     "path": "https://e-commerce-angular-tobias-moreno.netlify.app/",
     "description": "E-commerce desarrollado en Angular 18, utilizando TypeScript y Bootstrap. Es completamente responsive, incluye un carrito de compras y ofrece una excelente experiencia de usuario.",
@@ -54,6 +61,4 @@
     "image": "assets/img/store.png",
     "github": "https://github.com/TobiasMoreno/Store"
   }
-  
-  
 ]
