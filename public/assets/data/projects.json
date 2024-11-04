@@ -1,9 +1,9 @@
 [
   {
-    "title": "Sistema de Gestion de Recursos Humanos",
+    "title": "Sistema de Gestion de Recursos Humanos Nexus",
     "path": "https://hr-management-system-tobias-moreno.netlify.app/",
     "description": "Sistema de gestión de recursos humanos en inglés desarrollado con Angular y Spring Boot. Permite la gestión de empleados, procesos de contratación, y seguimiento de ausencias. Todo con un enfoque en la eficiencia y usabilidad.",
-    "image": "assets/img/hr-system.png",
+    "image": "assets/img/hr-nexus.png",
     "github": "https://github.com/TobiasMoreno/hr-management-system"
   },
   {
