@@ -10,8 +10,6 @@ Este es un portafolio de proyectos personales desarrollado con Angular, que mues
 - [Ejecutar la Aplicación](#ejecutar-la-aplicación)
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Tecnologías](#tecnologías)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
 
 ## Descripción General
 
