@@ -4,4 +4,5 @@ export interface IProject {
     description: string;
     image: string;
     github: string;
+    develop: boolean;
   }

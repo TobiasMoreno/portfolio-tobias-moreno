@@ -1,71 +1,89 @@
 [
   {
+    "title": "Demo Hamburguesas Beltran",
+    "path": "https://demo-hamburguesas-beltran.netlify.app/",
+    "description": "Sitio web Demo desarrollado con Angular y Bootstrap, diseñado para reconocida de hamburguesas. Incluye una tienda online con promociones, junto con secciones de información, contacto y ubicación. Es completamente responsivo y utiliza datos dinámicos gestionados a través de JSON para una fácil actualización.",
+    "image": "assets/img/hamb-beltran.png",
+    "github": "https://github.com/TobiasMoreno/hamburguesas-beltran",
+    "develop": true
+  },
+  {
     "title": "Sistema de Gestion de Recursos Humanos Nexus",
     "path": "https://hr-management-system-tobias-moreno.netlify.app/",
     "description": "Sistema de gestión de recursos humanos en inglés desarrollado con Angular y Spring Boot. Permite la gestión de empleados, procesos de contratación, y seguimiento de ausencias. Todo con un enfoque en la eficiencia y usabilidad.",
     "image": "assets/img/hr-nexus.png",
-    "github": "https://github.com/TobiasMoreno/hr-management-system"
+    "github": "https://github.com/TobiasMoreno/hr-management-system",
+    "develop": true
   },
   {
     "title": "Portafolio",
     "path": "https://portfolio-tobias-moreno.netlify.app/",
     "description": "Portafolio desarrollado en Angular 18, utilizando TypeScript y Bootstrap. Es completamente responsive, incluye todos los proyectos que he creado, mi recorrido y un formulario de contacto.",
     "image": "assets/img/portfolio.png",
-    "github": "https://github.com/TobiasMoreno/portfolio-tobias-moreno"
+    "github": "https://github.com/TobiasMoreno/portfolio-tobias-moreno",
+    "develop": false
   },
   {
     "title": "E-Commerce in Angular",
     "path": "https://e-commerce-angular-tobias-moreno.netlify.app/",
     "description": "E-commerce desarrollado en Angular 18, utilizando TypeScript y Bootstrap. Es completamente responsive, incluye un carrito de compras y ofrece una excelente experiencia de usuario.",
     "image": "assets/img/landing-page-angular-17.png",
-    "github": "https://github.com/TobiasMoreno/e-commerce-angular"
+    "github": "https://github.com/TobiasMoreno/e-commerce-angular",
+    "develop": false
   },
   {
     "title": "Lider Trofeos",
     "path": "https://lider-trofeos.netlify.app",
     "description": "Pagina Web desarrollada con Angular para una empresa. Es completamente responsive, asegurando una increíble experiencia de usuario",
     "image": "assets/img/lider.png",
-    "github": "https://github.com/TobiasMoreno/lider-trofeos"
+    "github": "https://github.com/TobiasMoreno/lider-trofeos",
+    "develop": false
   },
   {
     "title": "Landing page in Angular",
     "path": "https://landing-page-angular-17-tobias-moreno.netlify.app",
     "description": "E-commerce creado en Angular 17 con TypeScript y Bootstrap. Ofrece una lista completa de productos y asegura una excelente experiencia de usuario.",
     "image": "assets/img/landing-page-angular-17.png",
-    "github": "https://github.com/TobiasMoreno/Landing-Page-Angular-17"
+    "github": "https://github.com/TobiasMoreno/Landing-Page-Angular-17",
+    "develop": false
   },
   {
     "title": "Calculator in Angular",
     "path": "https://calculator-angular-tobias-moreno.netlify.app",
     "description": "Calculadora desarrollada con Angular 18 y TypeScript, ofreciendo funcionalidades básicas con una interfaz simple y eficiente.",
     "image": "assets/img/calculator-angular.png",
-    "github": "https://github.com/TobiasMoreno/angular-calculator"
+    "github": "https://github.com/TobiasMoreno/angular-calculator",
+    "develop": false
   },
   {
     "title": "Toro Wine",
     "path": "https://toro-wine-tobias-moreno.netlify.app",
     "description": "Página de Toro Wine para un equipo de fútbol y e-sports, desarrollada con HTML, CSS y JavaScript. Es completamente responsive y se adapta a diferentes dispositivos.",
     "image": "assets/img/toro-wine.png",
-    "github": "https://github.com/TobiasMoreno/ToroWine"
+    "github": "https://github.com/TobiasMoreno/ToroWine",
+    "develop": false
   },
   {
     "title": "Black Bull E-Commerce",
     "path": "https://e-commerce-tobias-moreno-freelancer.netlify.app",
     "description": "E-commerce desarrollado con HTML y CSS, completamente responsive para adaptarse a diversos dispositivos.",
     "image": "assets/img/black-bull.png",
-    "github": "https://github.com/TobiasMoreno/ECommerce"
+    "github": "https://github.com/TobiasMoreno/ECommerce",
+    "develop": false
   },
   {
     "title": "Blog de Cafe",
     "path": "https://blog-de-cafe-tobias-moreno.netlify.app",
     "description": "Blog de café creado con HTML y CSS, totalmente responsive, diseñado para explorar y comprender los fundamentos básicos de la programación web.",
-    "image": "assets/img/blog-cafe.png"
+    "image": "assets/img/blog-cafe.png",
+    "develop": false
   },
   {
     "title": "Store",
     "path": "https://tobias-moreno-store-freelancer.netlify.app",
     "description": "Store creado con HTML y CSS, totalmente responsive, diseñado para explorar y comprender los fundamentos básicos de la programación web.",
     "image": "assets/img/store.png",
-    "github": "https://github.com/TobiasMoreno/Store"
+    "github": "https://github.com/TobiasMoreno/Store",
+    "develop": false
   }
 ]
