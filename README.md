@@ -34,7 +34,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 1. **Clona el repositorio:**
 
    ````bash
-   git clone https://github.com/TobiasMoreno/personal-pages-angular.git
+   git clone https://github.com/TobiasMoreno/portfolio-tobias-moreno.git
 2. **Navegar al directorio del proyecto:**
 
    ```bash
