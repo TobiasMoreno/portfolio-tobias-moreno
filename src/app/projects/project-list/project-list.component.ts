@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { PagesStateService } from '../../data-access/pages-status.service';
+import { PagesStateService } from '../data-access/pages-status.service';
 
 @Component({
   selector: 'app-project-list',

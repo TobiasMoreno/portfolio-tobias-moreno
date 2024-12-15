@@ -3,7 +3,7 @@
     "title": "Demo Hamburguesas Beltran",
     "path": "https://demo-hamburguesas-beltran.netlify.app/",
     "description": "Sitio web Demo desarrollado con Angular y Bootstrap, diseñado para reconocida de hamburguesas. Incluye una tienda online con promociones, junto con secciones de información, contacto y ubicación. Es completamente responsivo y utiliza datos dinámicos gestionados a través de JSON para una fácil actualización.",
-    "image": "assets/img/hamb-beltran.png",
+    "image": "assets/img/burguess-beltran.jpeg",
     "github": "https://github.com/TobiasMoreno/hamburguesas-beltran",
     "develop": true
   },

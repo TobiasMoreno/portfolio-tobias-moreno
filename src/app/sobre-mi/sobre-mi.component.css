@@ -20,5 +20,5 @@ p{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .bg-gradient {
-  background: linear-gradient(to right, #5816ff, #cf1512) !important; 
+  background: linear-gradient(to right, var(--violet), var(--red)) !important; 
 }

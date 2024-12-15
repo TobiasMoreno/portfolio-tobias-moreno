@@ -14,7 +14,7 @@
 }
 
 .btn-custom {
-  background: linear-gradient(to right, #5816ff, #cf1512);
+  background: linear-gradient(to right, var(--violet), var(--red));
   border: none;
   background-size: 200% 100%;
   transition: background-position 0.3s ease, transform 0.3s ease;
@@ -22,9 +22,10 @@
 
 .btn-custom:hover {
   background-position: right;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 4px #cf1512;
-  text-shadow: 0 0 5px #fff, 0 0 10px #cf1512; /*Este no me convence tanto*/
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 4px var(--red);
 }
-span{
-  background: linear-gradient(to right, #5816ff, #cf1512);
+span {
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--grey)
 }

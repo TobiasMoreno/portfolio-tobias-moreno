@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { IProject } from '../../shared/interface';
-import { BaseHttpService } from '../../shared/data-access/base-http.service';
+import { BaseHttpService } from '../../../shared/data-access/base-http.service';
+import { IProject } from '../../../shared/interface';
 
 @Injectable({providedIn: 'root'})
 export class PagesService extends BaseHttpService{

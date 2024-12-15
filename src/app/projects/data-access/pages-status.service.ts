@@ -1,8 +1,8 @@
 import { inject, Injectable } from '@angular/core';
-import { IProject } from '../../shared/interface';
 import { signalSlice } from 'ngxtension/signal-slice';
 import { PagesService } from './pages.service';
 import { BehaviorSubject, catchError, map, Subject, switchMap } from 'rxjs';
+import { IProject } from '../../../shared/interface';
 
 interface State {
   projects: IProject[];
