@@ -3,30 +3,23 @@
 <div class="row text-dark">
   @for(project of projects.state().projects; track project) {
   <div class="col-md-6 col-lg-4 d-flex justify-content-center">
-    <div class="card m-3 project-card py-3" style="width: 300px;">
-
-      <!-- Contenedor de imagen con posición relativa -->
+    <div class="card m-3 project-card py-3" style="width: 300px">
       <div class="position-relative">
         <a href="{{ project.path }}" target="_blank">
           <img
             src="{{ project.image }}"
-            class="card-img-top"
+            class="card-img-top project-img"
             alt="{{ project.title }}"
           />
         </a>
 
-        <!-- Etiqueta de desarrollo -->
         @if (project.develop) {
-        <span
-          class="badge text-white position-absolute"
-        >
+        <span class="badge text-white position-absolute">
           En desarrollo <i class="bi bi-tools"></i>
         </span>
         }
-
       </div>
 
-      <!-- Contenido de la tarjeta -->
       <div class="card-body">
         <h5 class="card-title text-center gradient-text">
           {{ project.title }}
@@ -36,7 +29,6 @@
         </p>
       </div>
 
-      <!-- Botones -->
       <div class="d-flex justify-content-center">
         <a
           href="{{ project.path }}"
@@ -49,7 +41,6 @@
           <i class="bi bi-github"></i>
         </a>
       </div>
-
     </div>
   </div>
   }

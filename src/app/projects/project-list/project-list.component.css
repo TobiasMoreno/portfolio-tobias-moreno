@@ -24,8 +24,19 @@
   background-position: right;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3), inset 0 0 4px var(--red);
 }
+
 span {
   bottom: 10px;
   right: 10px;
-  background-color: var(--grey)
+  background-color: var(--grey);
+}
+
+/* ================================
+   Nuevo estilo para las imágenes
+   ================================ */
+.project-img {
+  width: 298px;
+  height: 298px;
+  object-fit: cover; /* recorta centrado si la proporción no coincide */
+  display: block; /* elimina posibles espacios en línea */
 }
