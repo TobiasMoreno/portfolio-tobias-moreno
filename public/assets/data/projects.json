@@ -19,7 +19,7 @@
     "title": "Real State Demo (Angular)",
     "path": "https://real-state-demo-tobias-moreno.netlify.app/",
     "description": "Real State Demo creado con Angular, totalmente responsive, diseñado para explorar y conocer las distintas oportunidades de compras e inversiones.",
-    "image": "assets/img/real-state-demo.jpeg",
+    "image": "assets/img/real-estate-demo.jpeg",
     "github": "https://github.com/TobiasMoreno/real-state-demo",
     "develop": false
   },
