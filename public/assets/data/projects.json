@@ -16,6 +16,14 @@
     "develop": false
   },
   {
+    "title": "Real State Demo (Angular)",
+    "path": "https://real-state-demo-tobias-moreno.netlify.app/",
+    "description": "Real State Demo creado con Angular, totalmente responsive, diseñado para explorar y conocer las distintas oportunidades de compras e inversiones.",
+    "image": "assets/img/real-state-demo.jpeg",
+    "github": "https://github.com/TobiasMoreno/real-state-demo",
+    "develop": false
+  },
+  {
     "title": "Demo Hamburguesas Beltran",
     "path": "https://demo-hamburguesas-beltran.netlify.app/",
     "description": "Sitio web Demo desarrollado con Angular y Bootstrap, diseñado para reconocida de hamburguesas. Incluye una tienda online con promociones, junto con secciones de información, contacto y ubicación. Es completamente responsivo y utiliza datos dinámicos gestionados a través de JSON para una fácil actualización.",
