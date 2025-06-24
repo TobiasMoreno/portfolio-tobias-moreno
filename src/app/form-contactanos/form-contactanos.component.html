@@ -1,87 +1,142 @@
-<h1 class="text-center gradient-text" id="contacto">Contactame</h1>
-<form [formGroup]="form" (ngSubmit)="submit()">
-  <div class="mb-3">
-    <label for="nombre" class="form-label">Nombre</label>
-    <input
-      type="text"
-      name="nombre"
-      id="nombre"
-      class="form-control"
-      placeholder="Ingrese su nombre"
-      formControlName="nombre"
-    />
+<div class="contact-form-container">
+  <h1 class="text-center gradient-text" id="contacto">Contáctame</h1>
+  
+  <form [formGroup]="form" (ngSubmit)="submit()" class="contact-form">
+    <!-- Campo Nombre -->
+    <div class="form-group">
+      <label for="nombre" class="form-label">
+        Nombre <span class="required">*</span>
+      </label>
+      <input
+        type="text"
+        name="nombre"
+        id="nombre"
+        class="form-control"
+        [class.is-invalid]="isFieldInvalid('nombre')"
+        [class.is-valid]="isFieldValid('nombre')"
+        placeholder="Ingresa tu nombre completo"
+        formControlName="nombre"
+        [disabled]="isSubmitting"
+      />
+      @if (getErrorMessage('nombre')) {
+        <div class="invalid-feedback">
+          {{ getErrorMessage('nombre') }}
+        </div>
+      }
+    </div>
+
+    <!-- Campo Email -->
+    <div class="form-group">
+      <label for="email" class="form-label">
+        Email <span class="required">*</span>
+      </label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        [class.is-invalid]="isFieldInvalid('email')"
+        [class.is-valid]="isFieldValid('email')"
+        placeholder="tu@email.com"
+        formControlName="email"
+        [disabled]="isSubmitting"
+      />
+      @if (getErrorMessage('email')) {
+        <div class="invalid-feedback">
+          {{ getErrorMessage('email') }}
+        </div>
+      }
+    </div>
+
+    <!-- Campo Asunto -->
+    <div class="form-group">
+      <label for="asuntoEmail" class="form-label">
+        Asunto <span class="required">*</span>
+      </label>
+      <input
+        type="text"
+        name="asuntoEmail"
+        id="asuntoEmail"
+        class="form-control"
+        [class.is-invalid]="isFieldInvalid('asuntoEmail')"
+        [class.is-valid]="isFieldValid('asuntoEmail')"
+        placeholder="¿En qué puedo ayudarte?"
+        formControlName="asuntoEmail"
+        [disabled]="isSubmitting"
+      />
+      @if (getErrorMessage('asuntoEmail')) {
+        <div class="invalid-feedback">
+          {{ getErrorMessage('asuntoEmail') }}
+        </div>
+      }
+    </div>
+
+    <!-- Campo Mensaje -->
+    <div class="form-group">
+      <label for="mensaje" class="form-label">
+        Mensaje <span class="required">*</span>
+      </label>
+      <textarea
+        name="mensaje"
+        id="mensaje"
+        class="form-control"
+        [class.is-invalid]="isFieldInvalid('mensaje')"
+        [class.is-valid]="isFieldValid('mensaje')"
+        placeholder="Cuéntame sobre tu proyecto o consulta..."
+        formControlName="mensaje"
+        rows="5"
+        [disabled]="isSubmitting"
+      ></textarea>
+      @if (getErrorMessage('mensaje')) {
+        <div class="invalid-feedback">
+          {{ getErrorMessage('mensaje') }}
+        </div>
+      }
+      <div class="form-text">
+        Mínimo 10 caracteres, máximo 500 caracteres
+      </div>
+    </div>
+
+    <!-- Botones -->
+    <div class="form-actions">
+      <button 
+        type="submit" 
+        class="btn btn-primary"
+        [disabled]="isSubmitting || !form.valid"
+      >
+        @if (isSubmitting) {
+          <span class="spinner-border spinner-border-sm me-2" role="status"></span>
+          Enviando...
+        } @else {
+          <i class="fas fa-paper-plane me-2"></i>
+          Enviar Mensaje
+        }
+      </button>
+      
+      <button 
+        type="reset" 
+        class="btn btn-secondary"
+        [disabled]="isSubmitting"
+        (click)="form.reset()"
+      >
+        <i class="fas fa-undo me-2"></i>
+        Limpiar
+      </button>
+    </div>
+  </form>
+
+  <!-- Información adicional -->
+  <div class="contact-info">
+    <div class="info-card">
+      <h4><i class="fas fa-info-circle me-2"></i>¿Por qué contactarme?</h4>
+      <ul>
+        <li><i class="fas fa-code me-2"></i>Desarrollo web y aplicaciones</li>
+        <li><i class="fas fa-lightbulb me-2"></i>Consultoría técnica</li>
+        <li><i class="fas fa-users me-2"></i>Colaboraciones en proyectos</li>
+        <li><i class="fas fa-briefcase me-2"></i>Oportunidades laborales</li>
+      </ul>
+    </div>
   </div>
-  @if (isRequired('nombre') ) {
-  <small class="text-danger">El nombre es requerido</small>
-  }
-  <div class="mb-3">
-    <label for="email" class="form-label">Email</label>
-    <input
-      type="email"
-      name="email"
-      id="email"
-      class="form-control form-outline mb-4"
-      formControlName="email"
-      placeholder="Ingrese su Email"
-    />
-  </div>
-  @if (isRequired('email') ) {
-  <small class="text-danger">El email es requerido</small>
-  } @if (hasEmailError()) {
-  <small class="text-danger">Email no válido</small>
-  }
-  <div class="mb-3">
-    <label for="asuntoEmail" class="form-label">Asunto del Mensaje</label>
-    <input
-      type="text"
-      name="asuntoEmail"
-      id="asuntoEmail"
-      class="form-control"
-      placeholder="Ingrese su nombre"
-      formControlName="asuntoEmail"
-    />
-  </div>
-  @if (isRequired('asuntoEmail') ) {
-  <small class="text-danger">El Asunto del mensaje es requerido</small>
-  } @if (form.get('asuntoEmail')?.hasError('minLength') ) {
-  <small
-    class="text-danger"
-    >{{form.get('asuntoEmail')?.errors?.['minLength']}}</small
-  >
-  } @if (form.get('asuntoEmail')?.hasError('maxLength') ) {
-  <small
-    class="text-danger"
-    >{{form.get('asuntoEmail')?.errors?.['maxLength']}}</small
-  >
-  }
-  <div class="mb-3">
-    <label for="mensaje" class="form-label">Mensaje</label>
-    <textarea
-      type="text"
-      name="mensaje"
-      id="mensaje"
-      class="form-control"
-      formControlName="mensaje"
-      placeholder="Ingrese su comentario"
-    ></textarea>
-    @if (isRequired('mensaje') ) {
-    <small class="text-danger">El mensaje es requerido</small>
-    } @if (form.get('mensaje')?.hasError('minLength') ) {
-    <small
-      class="text-danger"
-      >{{form.get('mensaje')?.errors?.['minLength']}}</small
-    >
-    } @if (form.get('mensaje')?.hasError('maxLength') ) {
-    <small
-      class="text-danger"
-      >{{form.get('mensaje')?.errors?.['maxLength']}}</small
-    >
-    }
-  </div>
-  <div class="d-flex">
-    <button class="me-auto" type="submit">Enviar</button>
-    <button class="ms-auto" type="reset">Cancelar</button>
 </div>
 
-</form>
 <ngx-sonner-toaster />
