@@ -1,18 +1,17 @@
 # 📧 Template EmailJS con Teléfono
 
-## 🚀 Variables Disponibles (Actualizadas)
-
 ### 📋 Información del Usuario
 - `{{nombre}}` - Nombre del remitente
 - `{{email}}` - Email del remitente
-- `{{telefono}}` - Teléfono del remitente ⭐ **NUEVO**
+- `{{telefono}}` - Teléfono del remitente (opcional)
 - `{{asuntoEmail}}` - Asunto del mensaje
 - `{{mensaje}}` - Contenido del mensaje
 
 ### 🕒 Información Temporal y del Sistema
-- `{{fecha}}` - Fecha y hora formateada
+- `{{fecha}}` - Fecha y hora formateada (ej: "15 de enero de 2024, 14:30")
 - `{{fechaISO}}` - Fecha en formato ISO
-- `{{timestamp}}` - Timestamp Unix
+- `{{timestamp}}` - Timestamp legible ⭐ **ACTUALIZADO** (ej: "15/01/2024, 14:30:25")
+- `{{timestampUnix}}` - Timestamp Unix (para referencia técnica)
 - `{{userAgent}}` - Navegador y sistema operativo
 - `{{idioma}}` - Idioma del navegador
 - `{{timezone}}` - Zona horaria del usuario
@@ -20,21 +19,21 @@
 - `{{referrer}}` - Página de origen (si aplica)
 
 ### 📊 Análisis del Mensaje
-- `{{longitudMensaje}}` - Número de caracteres del mensaje
-- `{{longitudAsunto}}` - Número de caracteres del asunto
-- `{{tipoConsulta}}` - Tipo detectado automáticamente
-- `{{prioridad}}` - Prioridad detectada (Alta/Media/Normal)
-- `{{palabrasClave}}` - Tecnologías mencionadas
+- `{{tipoConsulta}}` - Tipo detectado automáticamente:
+  - Oportunidad Laboral
+  - Proyecto de Desarrollo
+  - Consulta Técnica
+  - Colaboración
+  - Cotización
+  - Consulta General
+- `{{palabrasClave}}` - Tecnologías mencionadas (ej: "angular, typescript, node")
 
 ### 🎯 Variables para Respuesta
-- `{{saludo}}` - Saludo según la hora
-- `{{resumen}}` - Resumen del mensaje (ahora incluye teléfono)
-- `{{instruccionesRespuesta}}` - Instrucciones específicas para responder
-- `{{contactoAlternativo}}` - Información del teléfono ⭐ **NUEVO**
+- `{{saludo}}` - Saludo según la hora (Buenos días/tardes/noches)
+- `{{resumen}}` - Resumen del mensaje (incluye email y teléfono)
+- `{{contactoAlternativo}}` - Información del teléfono (si se proporcionó)
 
 ---
-
-## 📝 Template HTML Actualizado
 
 ```html
 <!DOCTYPE html>
@@ -217,12 +216,12 @@
 Has recibido un nuevo mensaje en tu portafolio:
 
 👤 INFORMACIÓN DEL REMITENTE
-───────────────────────────────────────────────────────────────
-• Nombre: {{nombre}}
-• Email: {{email}}
-• Teléfono: {{telefono}} ⭐ NUEVO
-• Asunto: {{asuntoEmail}}
-• Fecha: {{fecha}}
+• Nombre: Juan Pérez
+• Email: juan@empresa.com
+• Teléfono: 11 1234 5678
+• Asunto: Proyecto Angular con TypeScript
+• Fecha: 15 de enero de 2024, 14:30
+• Timestamp: 15/01/2024, 14:30:25
 
 📞 CONTACTO ALTERNATIVO
 ───────────────────────────────────────────────────────────────
@@ -230,9 +229,6 @@ Has recibido un nuevo mensaje en tu portafolio:
 
 📊 ANÁLISIS DEL MENSAJE
 ───────────────────────────────────────────────────────────────
-• Tipo de Consulta: {{tipoConsulta}}
-• Prioridad: {{prioridad}}
-• Longitud del Mensaje: {{longitudMensaje}} caracteres
 • Tecnologías Mencionadas: {{palabrasClave}}
 
 💬 MENSAJE

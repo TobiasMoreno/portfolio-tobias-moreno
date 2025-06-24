@@ -109,20 +109,24 @@ export class FormContactanosComponent {
           timeZone: 'America/Argentina/Buenos_Aires'
         }),
         fechaISO: new Date().toISOString(),
-        timestamp: Date.now(),
+        timestamp: new Date().toLocaleString('es-ES', {
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit',
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+          timeZone: 'America/Argentina/Buenos_Aires'
+        }),
         userAgent: navigator.userAgent,
         idioma: navigator.language,
         timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
         urlOrigen: window.location.href,
-        referrer: document.referrer || 'Directo',
       };
 
       // Información adicional del mensaje
       const messageInfo = {
-        longitudMensaje: userInfo.mensaje?.length || 0,
-        longitudAsunto: userInfo.asuntoEmail?.length || 0,
         tipoConsulta: this.detectarTipoConsulta(userInfo.asuntoEmail || '', userInfo.mensaje || ''),
-        prioridad: this.calcularPrioridad(userInfo.asuntoEmail || '', userInfo.mensaje || ''),
         palabrasClave: this.extraerPalabrasClave(userInfo.asuntoEmail || '', userInfo.mensaje || ''),
       };
 
@@ -134,7 +138,6 @@ export class FormContactanosComponent {
         // Variables para el template
         saludo: this.generarSaludo(),
         resumen: this.generarResumen(userInfo),
-        instruccionesRespuesta: this.generarInstruccionesRespuesta(messageInfo.tipoConsulta),
         contactoAlternativo: this.generarContactoAlternativo(userInfo),
       };
 
@@ -203,18 +206,6 @@ export class FormContactanosComponent {
 
   private generarResumen(userInfo: any): string {
     return `Nuevo mensaje de ${userInfo.nombre} (${userInfo.email} | ${userInfo.telefono}) sobre "${userInfo.asuntoEmail}"`;
-  }
-
-  private generarInstruccionesRespuesta(tipoConsulta: string): string {
-    const instrucciones = {
-      'Oportunidad Laboral': 'Revisar CV y experiencia. Responder con detalles sobre la posición y próximos pasos.',
-      'Proyecto de Desarrollo': 'Evaluar requerimientos técnicos. Solicitar más detalles si es necesario.',
-      'Consulta Técnica': 'Proporcionar información técnica detallada o recursos útiles.',
-      'Colaboración': 'Evaluar sinergias y oportunidades de trabajo conjunto.',
-      'Cotización': 'Analizar alcance y proporcionar estimación de costos y tiempos.',
-      'Consulta General': 'Responder de manera profesional y cordial.'
-    };
-    return instrucciones[tipoConsulta as keyof typeof instrucciones] || 'Responder de manera profesional.';
   }
 
   private generarContactoAlternativo(userInfo: any): string {
