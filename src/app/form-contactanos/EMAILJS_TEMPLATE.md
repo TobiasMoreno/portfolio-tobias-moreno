@@ -1,15 +1,16 @@
-# 📧 Template Optimizado de EmailJS
+# 📧 Template EmailJS con Teléfono
 
-## 🚀 Variables Disponibles
+## 🚀 Variables Disponibles (Actualizadas)
 
 ### 📋 Información del Usuario
 - `{{nombre}}` - Nombre del remitente
 - `{{email}}` - Email del remitente
+- `{{telefono}}` - Teléfono del remitente ⭐ **NUEVO**
 - `{{asuntoEmail}}` - Asunto del mensaje
 - `{{mensaje}}` - Contenido del mensaje
 
 ### 🕒 Información Temporal y del Sistema
-- `{{fecha}}` - Fecha y hora formateada (ej: "15 de enero de 2024, 14:30")
+- `{{fecha}}` - Fecha y hora formateada
 - `{{fechaISO}}` - Fecha en formato ISO
 - `{{timestamp}}` - Timestamp Unix
 - `{{userAgent}}` - Navegador y sistema operativo
@@ -21,24 +22,19 @@
 ### 📊 Análisis del Mensaje
 - `{{longitudMensaje}}` - Número de caracteres del mensaje
 - `{{longitudAsunto}}` - Número de caracteres del asunto
-- `{{tipoConsulta}}` - Tipo detectado automáticamente:
-  - Oportunidad Laboral
-  - Proyecto de Desarrollo
-  - Consulta Técnica
-  - Colaboración
-  - Cotización
-  - Consulta General
+- `{{tipoConsulta}}` - Tipo detectado automáticamente
 - `{{prioridad}}` - Prioridad detectada (Alta/Media/Normal)
-- `{{palabrasClave}}` - Tecnologías mencionadas (ej: "angular, typescript, node")
+- `{{palabrasClave}}` - Tecnologías mencionadas
 
 ### 🎯 Variables para Respuesta
-- `{{saludo}}` - Saludo según la hora (Buenos días/tardes/noches)
-- `{{resumen}}` - Resumen del mensaje
+- `{{saludo}}` - Saludo según la hora
+- `{{resumen}}` - Resumen del mensaje (ahora incluye teléfono)
 - `{{instruccionesRespuesta}}` - Instrucciones específicas para responder
+- `{{contactoAlternativo}}` - Información del teléfono ⭐ **NUEVO**
 
 ---
 
-## 📝 Template HTML Optimizado
+## 📝 Template HTML Actualizado
 
 ```html
 <!DOCTYPE html>
@@ -67,6 +63,8 @@
         .badge-warning { background: #ffc107; color: #212529; }
         .badge-danger { background: #dc3545; color: white; }
         .badge-info { background: #17a2b8; color: white; }
+        .contact-highlight { background: #e3f2fd; border: 2px solid #2196f3; border-radius: 8px; padding: 15px; margin: 10px 0; }
+        .phone-icon { color: #28a745; font-size: 1.2em; }
     </style>
 </head>
 <body>
@@ -90,6 +88,12 @@
                     <div class="value">{{email}}</div>
                 </div>
                 <div class="info-item">
+                    <div class="label">Teléfono:</div>
+                    <div class="value">
+                        <span class="phone-icon">📞</span> {{telefono}}
+                    </div>
+                </div>
+                <div class="info-item">
                     <div class="label">Asunto:</div>
                     <div class="value">{{asuntoEmail}}</div>
                 </div>
@@ -98,6 +102,13 @@
                     <div class="value">{{fecha}}</div>
                 </div>
             </div>
+        </div>
+
+        <!-- Contacto Alternativo Destacado -->
+        <div class="contact-highlight">
+            <h3>📞 Contacto Alternativo</h3>
+            <p><strong>{{contactoAlternativo}}</strong></p>
+            <p><em>Si el email no funciona, puedes contactar por teléfono.</em></p>
         </div>
 
         <!-- Análisis del Mensaje -->
@@ -195,9 +206,7 @@
 
 ---
 
-## 🎨 Template Texto Simple (Alternativo)
-
-Si prefieres un template más simple en texto plano:
+## 🎨 Template Texto Simple (Actualizado)
 
 ```
 📧 NUEVO MENSAJE DE CONTACTO
@@ -211,8 +220,13 @@ Has recibido un nuevo mensaje en tu portafolio:
 ───────────────────────────────────────────────────────────────
 • Nombre: {{nombre}}
 • Email: {{email}}
+• Teléfono: {{telefono}} ⭐ NUEVO
 • Asunto: {{asuntoEmail}}
 • Fecha: {{fecha}}
+
+📞 CONTACTO ALTERNATIVO
+───────────────────────────────────────────────────────────────
+{{contactoAlternativo}}
 
 📊 ANÁLISIS DEL MENSAJE
 ───────────────────────────────────────────────────────────────
@@ -244,26 +258,21 @@ Has recibido un nuevo mensaje en tu portafolio:
 
 ---
 
-## 🚀 Beneficios de estas Variables
+## 🚀 Beneficios del Teléfono
 
-### 📈 **Análisis Automático**
-- **Detección de tipo de consulta** - Te ayuda a categorizar automáticamente
-- **Priorización inteligente** - Identifica mensajes urgentes
-- **Extracción de tecnologías** - Detecta qué tecnologías mencionan
+### 📞 **Contacto Alternativo**
+- **Backup de comunicación** - Si el email falla, tienes el teléfono
+- **Respuesta más rápida** - Para consultas urgentes
+- **Confianza del cliente** - Muestra profesionalismo
 
-### 🎯 **Mejor Respuesta**
-- **Instrucciones específicas** - Te dice cómo responder según el tipo
-- **Contexto completo** - Toda la información necesaria en un vistazo
-- **Saludo personalizado** - Según la hora del día
+### 🎯 **Mejor Experiencia**
+- **Múltiples canales** - Email + Teléfono
+- **Flexibilidad** - El cliente elige cómo contactarte
+- **Accesibilidad** - Algunos prefieren llamar
 
-### 🔍 **Información Técnica**
-- **Trazabilidad** - Sabes desde dónde y cuándo se envió
-- **Contexto del usuario** - Navegador, idioma, zona horaria
-- **Análisis de comportamiento** - Referrer y URL de origen
+### 📊 **Análisis Mejorado**
+- **Patrones de contacto** - Qué método prefieren
+- **Geolocalización** - Códigos de área por región
+- **Validación robusta** - Teléfonos argentinos válidos
 
-### 📊 **Métricas Útiles**
-- **Longitud de mensajes** - Para entender el nivel de detalle
-- **Patrones de consulta** - Para mejorar tu portafolio
-- **Tecnologías populares** - Para enfocar tu contenido
-
-¡Con estas variables tendrás toda la información necesaria para responder de manera profesional y efectiva! 🎉 
+¡Ahora tienes un sistema de contacto completo con email y teléfono! 🎉 

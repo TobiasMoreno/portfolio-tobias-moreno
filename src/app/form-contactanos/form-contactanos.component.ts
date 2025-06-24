@@ -14,6 +14,8 @@ import {
   hasValidName,
   hasNoSpam,
   getFieldErrorMessage,
+  hasValidPhone,
+  hasPhoneError,
 } from './validators';
 import emailjs from '@emailjs/browser';
 import { environment } from '../../environments/enviroment';
@@ -21,6 +23,7 @@ import { environment } from '../../environments/enviroment';
 export interface SubmitForm {
   nombre: FormControl<string | null>;
   email: FormControl<string | null>;
+  telefono: FormControl<string | null>;
   mensaje: FormControl<string | null>;
   asuntoEmail: FormControl<string | null>;
 }
@@ -47,6 +50,9 @@ export class FormContactanosComponent {
     email: this._formBuilder.control('', [
       Validators.required,
       Validators.email,
+    ]),
+    telefono: this._formBuilder.control('', [
+      hasValidPhone(),
     ]),
     mensaje: this._formBuilder.control('', [
       Validators.required,
@@ -87,6 +93,7 @@ export class FormContactanosComponent {
       const userInfo = {
         nombre: this.form.value.nombre?.trim(),
         email: this.form.value.email?.trim(),
+        telefono: this.form.value.telefono?.trim(),
         asuntoEmail: this.form.value.asuntoEmail?.trim(),
         mensaje: this.form.value.mensaje?.trim(),
       };
@@ -128,6 +135,7 @@ export class FormContactanosComponent {
         saludo: this.generarSaludo(),
         resumen: this.generarResumen(userInfo),
         instruccionesRespuesta: this.generarInstruccionesRespuesta(messageInfo.tipoConsulta),
+        contactoAlternativo: this.generarContactoAlternativo(userInfo),
       };
 
       await emailjs.send(
@@ -194,7 +202,7 @@ export class FormContactanosComponent {
   }
 
   private generarResumen(userInfo: any): string {
-    return `Nuevo mensaje de ${userInfo.nombre} (${userInfo.email}) sobre "${userInfo.asuntoEmail}"`;
+    return `Nuevo mensaje de ${userInfo.nombre} (${userInfo.email} | ${userInfo.telefono}) sobre "${userInfo.asuntoEmail}"`;
   }
 
   private generarInstruccionesRespuesta(tipoConsulta: string): string {
@@ -209,6 +217,10 @@ export class FormContactanosComponent {
     return instrucciones[tipoConsulta as keyof typeof instrucciones] || 'Responder de manera profesional.';
   }
 
+  private generarContactoAlternativo(userInfo: any): string {
+    return `Teléfono: ${userInfo.telefono}`;
+  }
+
   private markAllFieldsAsTouched() {
     Object.keys(this.form.controls).forEach(key => {
       const control = this.form.get(key);
@@ -216,7 +228,7 @@ export class FormContactanosComponent {
     });
   }
 
-  isRequired(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail') {
+  isRequired(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail' | 'telefono') {
     return isRequired(field, this.form);
   }
 
@@ -224,16 +236,20 @@ export class FormContactanosComponent {
     return hasEmailError(this.form);
   }
 
-  getErrorMessage(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail') {
+  hasPhoneError() {
+    return hasPhoneError(this.form);
+  }
+
+  getErrorMessage(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail' | 'telefono') {
     return getFieldErrorMessage(field, this.form);
   }
 
-  isFieldInvalid(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail') {
+  isFieldInvalid(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail' | 'telefono') {
     const control = this.form.get(field);
     return control && control.touched && control.invalid;
   }
 
-  isFieldValid(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail') {
+  isFieldValid(field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail' | 'telefono') {
     const control = this.form.get(field);
     return control && control.touched && control.valid;
   }

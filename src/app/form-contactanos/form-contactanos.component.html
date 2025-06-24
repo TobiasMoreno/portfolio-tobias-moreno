@@ -48,6 +48,33 @@
       }
     </div>
 
+    <!-- Campo Teléfono -->
+    <div class="form-group">
+      <label for="telefono" class="form-label">
+        Teléfono <span class="text-muted small">(Opcional)</span>
+      </label>
+      <input
+        type="tel"
+        name="telefono"
+        id="telefono"
+        class="form-control"
+        [class.is-invalid]="isFieldInvalid('telefono')"
+        [class.is-valid]="isFieldValid('telefono')"
+        placeholder="11 1234 5678"
+        formControlName="telefono"
+        [disabled]="isSubmitting"
+      />
+      @if (getErrorMessage('telefono')) {
+        <div class="invalid-feedback">
+          {{ getErrorMessage('telefono') }}
+        </div>
+      }
+      <div class="form-text">
+        <i class="fas fa-info-circle me-1"></i>
+        Formato: 11 1234 5678 (con o sin código de área)
+      </div>
+    </div>
+
     <!-- Campo Asunto -->
     <div class="form-group">
       <label for="asuntoEmail" class="form-label">

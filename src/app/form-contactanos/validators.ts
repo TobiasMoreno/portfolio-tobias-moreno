@@ -6,7 +6,7 @@ import {
 } from '@angular/forms';
 
 export const isRequired = (
-  field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail',
+  field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail' | 'telefono',
   form: FormGroup
 ) => {
   const control = form.get(field);
@@ -16,6 +16,11 @@ export const isRequired = (
 export const hasEmailError = (form: FormGroup) => {
   const control = form.get('email');
   return control && control.touched && control.hasError('email');
+};
+
+export const hasPhoneError = (form: FormGroup) => {
+  const control = form.get('telefono');
+  return control && control.touched && control.hasError('pattern');
 };
 
 export const hasMinLength = (minLength: number): ValidatorFn => {
@@ -34,6 +39,23 @@ export const hasMaxLength = (maxLength: number): ValidatorFn => {
     if (control.value && control.value.length > maxLength) {
       return {
         maxLength: `Máximo ${maxLength} caracteres permitidos`,
+      };
+    }
+    return null;
+  };
+};
+
+// Validador para teléfonos argentinos
+export const hasValidPhone = (): ValidatorFn => {
+  return (control: AbstractControl): ValidationErrors | null => {
+    if (!control.value) return null;
+    
+    const phone = control.value.replace(/\s/g, ''); // Remover espacios
+    const phoneRegex = /^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$/;
+    
+    if (!phoneRegex.test(phone)) {
+      return {
+        invalidPhone: 'Ingrese un número de teléfono válido (ej: 11 1234 5678)',
       };
     }
     return null;
@@ -78,7 +100,7 @@ export const hasNoSpam = (): ValidatorFn => {
 
 // Función helper para obtener mensaje de error específico
 export const getFieldErrorMessage = (
-  field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail',
+  field: 'email' | 'nombre' | 'mensaje' | 'asuntoEmail' | 'telefono',
   form: FormGroup
 ): string | null => {
   const control = form.get(field);
@@ -90,6 +112,14 @@ export const getFieldErrorMessage = (
 
   if (field === 'email' && control.hasError('email')) {
     return 'Ingrese un email válido';
+  }
+
+  if (field === 'telefono' && control.hasError('pattern')) {
+    return 'Solo se permiten números';
+  }
+
+  if (field === 'telefono' && control.hasError('invalidPhone')) {
+    return control.errors?.['invalidPhone'];
   }
 
   if (control.hasError('minLength')) {
