@@ -7,6 +7,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { SobreMiComponent } from './sobre-mi/sobre-mi.component';
 import { RecorridoComponent } from './recorrido/recorrido.component';
 import { FormContactanosComponent } from './form-contactanos/form-contactanos.component';
+import { AiSidebarComponent } from './ui/ai-sidebar/ai-sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -19,7 +20,8 @@ import { FormContactanosComponent } from './form-contactanos/form-contactanos.co
     InicioComponent,
     SobreMiComponent,
     RecorridoComponent,
-    FormContactanosComponent
+    FormContactanosComponent,
+    AiSidebarComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
