@@ -2,7 +2,7 @@
   {
     "title": "GameDLE",
     "path": "https://gamedle-tobias-moreno-dev.netlify.app",
-    "description": "Sitio Web de Juegos desarrollado con Angular y TypeScript. Exclusivo para jugar entre amigos SIN LIMITE.",
+    "description": "Sitio web desarrollado con Angular 19 y Tailwind CSS, diseñado como una colección de juegos diarios inspirados en Wordle. La plataforma incluye múltiples modalidades de juego (Wordle, OnePieceDLE, Numberle, Colorle) con un sistema de navegación intuitivo y persistencia de datos local.",
     "image": "assets/img/gamedle.png",
     "github": "https://github.com/TobiasMoreno/game-dle",
     "develop": true
