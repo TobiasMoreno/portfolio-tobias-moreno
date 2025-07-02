@@ -1,5 +1,13 @@
 [
   {
+    "title": "GameDLE",
+    "path": "https://gamedle-tobias-moreno-dev.netlify.app",
+    "description": "Sitio Web de Juegos desarrollado con Angular y TypeScript. Exclusivo para jugar entre amigos SIN LIMITE.",
+    "image": "assets/img/gamedle.png",
+    "github": "https://github.com/TobiasMoreno/gamedle",
+    "develop": true
+  },
+  {
     "title": "Admin Panel Backend (NestJS)",
     "path": "https://real-estate-vue-tobias-moreno.netlify.app",
     "description": "API REST construida con NestJS, PostgreSQL en Neon como base de datos, y almacenamiento de archivos en Cloudinary. Implementa autenticación con Firebase, validaciones, rutas protegidas, manejo de excepciones y arquitectura modular basada en buenas prácticas.",
