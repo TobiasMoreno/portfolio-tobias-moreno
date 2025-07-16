@@ -1,18 +1,20 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { AiAssistantService, AIResponse } from '../../shared/services/ai-assistant.service';
+import {
+  AiAssistantService,
+  AIResponse,
+} from '../../shared/services/ai-assistant.service';
 
 @Component({
   selector: 'app-ai-sidebar',
   standalone: true,
   imports: [],
   templateUrl: './ai-sidebar.component.html',
-  styleUrls: ['./ai-sidebar.component.css']
+  styleUrls: ['./ai-sidebar.component.css'],
 })
 export class AiSidebarComponent implements OnInit {
   isOpen = false;
   prompts: AIResponse[] = [];
   selectedResponse: AIResponse | null = null;
-  isLoading = false;
   private readonly aiService = inject(AiAssistantService);
 
   ngOnInit(): void {
@@ -27,13 +29,7 @@ export class AiSidebarComponent implements OnInit {
   }
 
   selectPrompt(prompt: AIResponse): void {
-    this.isLoading = true;
-    
-    // Simular delay de respuesta de IA
-    setTimeout(() => {
-      this.selectedResponse = prompt;
-      this.isLoading = false;
-    }, 800);
+    this.selectedResponse = prompt;
   }
 
   closeSidebar(): void {
@@ -44,4 +40,4 @@ export class AiSidebarComponent implements OnInit {
   formatAnswer(answer: string): string {
     return answer.replace(/\n/g, '<br>');
   }
-} 
+}
