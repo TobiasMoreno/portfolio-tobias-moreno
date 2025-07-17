@@ -31,12 +31,10 @@ span {
   background-color: var(--grey);
 }
 
-/* ================================
-   Nuevo estilo para las imágenes
-   ================================ */
 .project-img {
   width: 298px;
   height: 298px;
-  object-fit: cover; /* recorta centrado si la proporción no coincide */
-  display: block; /* elimina posibles espacios en línea */
+  object-fit: cover;
+  display: block;
+  transition: all 0.3s ease;
 }

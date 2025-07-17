@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { FooterComponent } from './ui/footer/footer.component';
 import { ProjectListComponent } from './projects/project-list/project-list.component';
@@ -26,8 +26,19 @@ import { AiSidebarComponent } from './ui/ai-sidebar/ai-sidebar.component';
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'personal-pages';
+
+  ngOnInit() {
+    const AOS = (window as any).AOS;
+    if (AOS) {
+      AOS.init({
+        once: true,
+        duration: 800,
+        easing: 'ease-in-out',
+      });
+    }
+  }
 
   redirect(){
     const phoneCountryCode = "549";

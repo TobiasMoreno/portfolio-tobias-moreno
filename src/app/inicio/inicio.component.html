@@ -4,7 +4,11 @@
     id="inicio"
   >
     <div class="text-center text-md-start align-content-center">
-      <h1 class="display-4 fw-bold gradient-text">Tobias Emiliano Moreno</h1>
+      <h1 class="display-4 fw-bold gradient-text" id="stagger-title">
+        @for (letter of titleLetters; track letter) {
+          <span>{{ letter }}</span>
+        }
+      </h1>
       <h2 class="h4 text-muted gradient-text-reverse text-center">
         Desarrollador Web
       </h2>
@@ -15,6 +19,9 @@
           Abrir CV
         </button>
       </div>
+    </div>
+    <div class="ms-md-5 mt-4 mt-md-0">
+      <img id="parallax-img" src="assets/img/Tobi.jpeg" alt="Tobias Moreno" style="max-width: 320px; border-radius: 50%; box-shadow: 0 8px 32px 0 rgba(151, 156, 224, 0.2);">
     </div>
   </section>
 </div>
