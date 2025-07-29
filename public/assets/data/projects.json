@@ -1,5 +1,13 @@
 [
   {
+    "title": "Think Before Prompt",
+    "path": "https://think-before-prompts-tobias-moreno.netlify.app/",
+    "description": "Plataforma educativa interactiva desarrollada con Angular 19 y Tailwind CSS que ofrece un aprendizaje estructurado sobre Inteligencia Artificial y Angular. Incluye dos áreas principales: una sección completa de IA y una sección de introducción a Angular. La plataforma cuenta con navegación dinámica, componentes interactivos, ejemplos de código prácticos y una interfaz moderna con animaciones CSS y diseño responsive.",
+    "image": "assets/img/think-before-prompt.png",
+    "github": "https://github.com/TobiasMoreno/think-before-prompt",
+    "develop": true
+  },
+  {
     "title": "GameDLE",
     "path": "https://gamedle-tobias-moreno-dev.netlify.app",
     "description": "Sitio web desarrollado con Angular 19 y Tailwind CSS, diseñado como una colección de juegos diarios inspirados en Wordle. La plataforma incluye múltiples modalidades de juego (Wordle, OnePieceDLE, LolDle,DragonBallDle) con un sistema de navegación intuitivo y persistencia de datos local.",
