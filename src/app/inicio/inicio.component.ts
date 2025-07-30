@@ -11,4 +11,8 @@ export class InicioComponent {
   openCV() {
     window.open('https://drive.google.com/file/d/1CVj8CjdPSItd1qcKQpO7Hpu6bb98BKRB/view?usp=sharing', '_blank');
   }
+
+  openCVEnglish() {
+    window.open('https://drive.google.com/file/d/1jcKPi8BLy3yQz7fkjYK89xvKlsghjaMN/view?usp=sharing', '_blank');
+  }
 }
