@@ -13,6 +13,6 @@ export class InicioComponent {
   }
 
   openCVEnglish() {
-    window.open('https://drive.google.com/file/d/1jcKPi8BLy3yQz7fkjYK89xvKlsghjaMN/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/176l5VwXqlH8KP7SJiHWWtlfahl3PpL4O/view?usp=sharing', '_blank');
   }
 }
