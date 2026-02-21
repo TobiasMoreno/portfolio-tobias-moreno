@@ -1,12 +1,9 @@
 <div class="contact-form-container">
-  <h1 class="text-center gradient-text" id="contacto">Contáctame</h1>
-  
+  <h1 class="form-title" id="contacto">Contáctame</h1>
+
   <form [formGroup]="form" (ngSubmit)="submit()" class="contact-form">
-    <!-- Campo Nombre -->
     <div class="form-group">
-      <label for="nombre" class="form-label">
-        Nombre <span class="required">*</span>
-      </label>
+      <label for="nombre" class="form-label">Nombre <span class="required">*</span></label>
       <input
         type="text"
         name="nombre"
@@ -14,22 +11,17 @@
         class="form-control"
         [class.is-invalid]="isFieldInvalid('nombre')"
         [class.is-valid]="isFieldValid('nombre')"
-        placeholder="Ingresa tu nombre completo"
+        placeholder="Tu nombre"
         formControlName="nombre"
         [disabled]="isSubmitting"
       />
       @if (getErrorMessage('nombre')) {
-        <div class="invalid-feedback">
-          {{ getErrorMessage('nombre') }}
-        </div>
+        <span class="invalid-feedback">{{ getErrorMessage('nombre') }}</span>
       }
     </div>
 
-    <!-- Campo Email -->
     <div class="form-group">
-      <label for="email" class="form-label">
-        Email <span class="required">*</span>
-      </label>
+      <label for="email" class="form-label">Email <span class="required">*</span></label>
       <input
         type="email"
         name="email"
@@ -42,17 +34,12 @@
         [disabled]="isSubmitting"
       />
       @if (getErrorMessage('email')) {
-        <div class="invalid-feedback">
-          {{ getErrorMessage('email') }}
-        </div>
+        <span class="invalid-feedback">{{ getErrorMessage('email') }}</span>
       }
     </div>
 
-    <!-- Campo Teléfono -->
     <div class="form-group">
-      <label for="telefono" class="form-label">
-        Teléfono <span class="text-muted small">(Opcional)</span>
-      </label>
+      <label for="telefono" class="form-label">Teléfono</label>
       <input
         type="tel"
         name="telefono"
@@ -60,26 +47,17 @@
         class="form-control"
         [class.is-invalid]="isFieldInvalid('telefono')"
         [class.is-valid]="isFieldValid('telefono')"
-        placeholder="11 1234 5678"
+        placeholder="Opcional"
         formControlName="telefono"
         [disabled]="isSubmitting"
       />
       @if (getErrorMessage('telefono')) {
-        <div class="invalid-feedback">
-          {{ getErrorMessage('telefono') }}
-        </div>
+        <span class="invalid-feedback">{{ getErrorMessage('telefono') }}</span>
       }
-      <div class="form-text">
-        <i class="fas fa-info-circle me-1"></i>
-        Formato: 11 1234 5678 (con o sin código de área)
-      </div>
     </div>
 
-    <!-- Campo Asunto -->
     <div class="form-group">
-      <label for="asuntoEmail" class="form-label">
-        Asunto <span class="required">*</span>
-      </label>
+      <label for="asuntoEmail" class="form-label">Asunto <span class="required">*</span></label>
       <input
         type="text"
         name="asuntoEmail"
@@ -92,78 +70,49 @@
         [disabled]="isSubmitting"
       />
       @if (getErrorMessage('asuntoEmail')) {
-        <div class="invalid-feedback">
-          {{ getErrorMessage('asuntoEmail') }}
-        </div>
+        <span class="invalid-feedback">{{ getErrorMessage('asuntoEmail') }}</span>
       }
     </div>
 
-    <!-- Campo Mensaje -->
     <div class="form-group">
-      <label for="mensaje" class="form-label">
-        Mensaje <span class="required">*</span>
-      </label>
+      <label for="mensaje" class="form-label">Mensaje <span class="required">*</span></label>
       <textarea
         name="mensaje"
         id="mensaje"
         class="form-control"
         [class.is-invalid]="isFieldInvalid('mensaje')"
         [class.is-valid]="isFieldValid('mensaje')"
-        placeholder="Me gustaría contactarte..."
+        placeholder="Escribe tu mensaje..."
         formControlName="mensaje"
-        rows="5"
+        rows="4"
         [disabled]="isSubmitting"
       ></textarea>
       @if (getErrorMessage('mensaje')) {
-        <div class="invalid-feedback">
-          {{ getErrorMessage('mensaje') }}
-        </div>
+        <span class="invalid-feedback">{{ getErrorMessage('mensaje') }}</span>
       }
-      <div class="form-text">
-        Mínimo 10 caracteres, máximo 500 caracteres
-      </div>
     </div>
 
-    <!-- Botones -->
     <div class="form-actions">
-      <button 
-        type="submit" 
+      <button
+        type="submit"
         class="btn btn-primary"
         [disabled]="isSubmitting || !form.valid"
       >
         @if (isSubmitting) {
           <span class="spinner-border spinner-border-sm me-2" role="status"></span>
-          Enviando...
-        } @else {
-          <i class="fas fa-paper-plane me-2"></i>
-          Enviar Mensaje
         }
+        {{ isSubmitting ? 'Enviando...' : 'Enviar' }}
       </button>
-      
-      <button 
-        type="reset" 
-        class="btn btn-secondary"
+      <button
+        type="button"
+        class="btn btn-secondary border"
         [disabled]="isSubmitting"
         (click)="form.reset()"
       >
-        <i class="fas fa-undo me-2"></i>
         Limpiar
       </button>
     </div>
   </form>
-
-  <!-- Información adicional -->
-  <div class="contact-info">
-    <div class="info-card">
-      <h4><i class="fas fa-info-circle me-2"></i>¿Por qué contactarme?</h4>
-      <ul>
-        <li><i class="fas fa-code me-2"></i>Desarrollo web y aplicaciones</li>
-        <li><i class="fas fa-lightbulb me-2"></i>Consultoría técnica</li>
-        <li><i class="fas fa-users me-2"></i>Colaboraciones en proyectos</li>
-        <li><i class="fas fa-briefcase me-2"></i>Oportunidades laborales</li>
-      </ul>
-    </div>
-  </div>
 </div>
 
 <ngx-sonner-toaster />

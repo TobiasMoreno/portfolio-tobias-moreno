@@ -20,5 +20,36 @@ p{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 .bg-gradient {
-  background: linear-gradient(to right, var(--violet), var(--red)) !important; 
+  background: linear-gradient(to right, var(--violet), var(--red)) !important;
+}
+
+/* Colores representativos de cada tecnología */
+.badge-sql {
+  background-color: #00758f !important;
+  color: #fff !important;
+}
+
+.badge-angular {
+  background-color: #dd0031 !important;
+  color: #fff !important;
+}
+
+.badge-typescript {
+  background-color: #3178c6 !important;
+  color: #fff !important;
+}
+
+.badge-java {
+  background-color: #ed8b00 !important;
+  color: #fff !important;
+}
+
+.badge-spring {
+  background-color: #6db33f !important;
+  color: #fff !important;
+}
+
+.badge-aws {
+  background-color: #ff9900 !important;
+  color: #232f3e !important;
 }
