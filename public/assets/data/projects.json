@@ -1,129 +1,62 @@
 [
   {
+    "id": "think-before-prompt",
     "title": "Think Before Prompt",
-    "path": "https://think-before-prompts-tobias-moreno.netlify.app/",
-    "description": "Plataforma educativa interactiva desarrollada con Angular 19 y Tailwind CSS que ofrece un aprendizaje estructurado sobre Inteligencia Artificial y Angular. Incluye dos áreas principales: una sección completa de IA y una sección de introducción a Angular. La plataforma cuenta con navegación dinámica, componentes interactivos, ejemplos de código prácticos y una interfaz moderna con animaciones CSS y diseño responsive.",
+    "description": "Interactive educational platform built with Angular 19 and Tailwind CSS for structured learning about AI and Angular. Features dynamic navigation, interactive components, practical code examples, and a modern interface with CSS animations and responsive design.",
     "image": "assets/img/think-before-prompt.png",
-    "github": "https://github.com/TobiasMoreno/think-before-prompt",
-    "develop": true
+    "liveUrl": "https://think-before-prompts-tobias-moreno.netlify.app/",
+    "repoUrl": "https://github.com/TobiasMoreno/think-before-prompt",
+    "tech": ["Angular", "TypeScript", "Tailwind CSS"],
+    "featured": true,
+    "year": 2024,
+    "role": "frontend"
   },
   {
+    "id": "gamedle",
     "title": "GameDLE",
-    "path": "https://gamedle-tobias-moreno-dev.netlify.app",
-    "description": "Sitio web desarrollado con Angular 19 y Tailwind CSS, diseñado como una colección de juegos diarios inspirados en Wordle. La plataforma incluye múltiples modalidades de juego (Wordle, OnePieceDLE, LolDle,DragonBallDle) con un sistema de navegación intuitivo y persistencia de datos local.",
+    "description": "Web app built with Angular 19 and Tailwind CSS — a collection of daily games inspired by Wordle. Includes multiple game modes (Wordle, OnePieceDLE, LolDle, DragonBallDle) with intuitive navigation and local data persistence.",
     "image": "assets/img/gamedle.png",
-    "github": "https://github.com/TobiasMoreno/game-dle",
-    "develop": true
+    "liveUrl": "https://gamedle-tobias-moreno-dev.netlify.app",
+    "repoUrl": "https://github.com/TobiasMoreno/game-dle",
+    "tech": ["Angular", "TypeScript", "Tailwind CSS", "LocalStorage"],
+    "featured": true,
+    "year": 2024,
+    "role": "frontend"
   },
   {
-    "title": "Admin Panel Backend (NestJS)",
-    "path": "https://real-estate-vue-tobias-moreno.netlify.app",
-    "description": "API REST construida con NestJS, PostgreSQL en Neon como base de datos, y almacenamiento de archivos en Cloudinary. Implementa autenticación con Firebase, validaciones, rutas protegidas, manejo de excepciones y arquitectura modular basada en buenas prácticas.",
+    "id": "admin-panel-nestjs",
+    "title": "Admin Panel — Backend API (NestJS)",
+    "description": "REST API built with NestJS and PostgreSQL on Neon, with file storage on Cloudinary. Implements Firebase authentication, input validation, protected routes, exception handling, and modular architecture following best practices.",
     "image": "assets/img/real-estate-demo.jpeg",
-    "github": "https://github.com/TobiasMoreno/real-estate-nest",
-    "develop": false
+    "liveUrl": "https://real-estate-vue-tobias-moreno.netlify.app",
+    "repoUrl": "https://github.com/TobiasMoreno/real-estate-nest",
+    "tech": ["NestJS", "PostgreSQL", "Firebase", "Cloudinary", "TypeScript"],
+    "featured": true,
+    "year": 2024,
+    "role": "backend"
   },
   {
-    "title": "Admin Panel Frontend (Vue)",
-    "path": "https://real-estate-vue-tobias-moreno.netlify.app",
-    "description": "Interfaz de administración desarrollada con Vue 3 y TypeScript. Diseñada para gestionar usuarios y edificios, utilizando autenticación con Firebase y conectándose a una API externa. Incluye vistas protegidas, formularios dinámicos y diseño responsive.",
-    "image": "assets/img/real-estate-demo.jpeg",
-    "github": "https://github.com/TobiasMoreno/real-estate-vue",
-    "develop": false
-  },
-  {
-    "title": "Real State Demo (Angular)",
-    "path": "https://real-state-demo-tobias-moreno.netlify.app/",
-    "description": "Real State Demo creado con Angular, totalmente responsive, diseñado para explorar y conocer las distintas oportunidades de compras e inversiones.",
-    "image": "assets/img/real-estate-demo.jpeg",
-    "github": "https://github.com/TobiasMoreno/real-state-demo",
-    "develop": false
-  },
-  {
-    "title": "Demo Hamburguesas Beltran",
-    "path": "https://demo-hamburguesas-beltran.netlify.app/",
-    "description": "Sitio web Demo desarrollado con Angular y Bootstrap, diseñado para reconocida de hamburguesas. Incluye una tienda online con promociones, junto con secciones de información, contacto y ubicación. Es completamente responsivo y utiliza datos dinámicos gestionados a través de JSON para una fácil actualización.",
-    "image": "assets/img/burguess-beltran.jpeg",
-    "github": "https://github.com/TobiasMoreno/hamburguesas-beltran",
-    "develop": true
-  },
-  {
-    "title": "Sistema de Gestion de Recursos Humanos Nexus",
-    "path": "https://hr-management-system-tobias-moreno.netlify.app/",
-    "description": "Sistema de gestión de recursos humanos en inglés desarrollado con Angular y Spring Boot. Permite la gestión de empleados, procesos de contratación, y seguimiento de ausencias. Todo con un enfoque en la eficiencia y usabilidad.",
+    "id": "hr-nexus",
+    "title": "HR Management System — Nexus",
+    "description": "Human resources management system developed with Angular and Spring Boot. Covers employee management, hiring workflows, and absence tracking, with a focus on efficiency and usability.",
     "image": "assets/img/hr-nexus.png",
-    "github": "https://github.com/TobiasMoreno/hr-management-system",
-    "develop": true
+    "liveUrl": "https://hr-management-system-tobias-moreno.netlify.app/",
+    "repoUrl": "https://github.com/TobiasMoreno/hr-management-system",
+    "tech": ["Angular", "Spring Boot", "Java", "TypeScript"],
+    "featured": true,
+    "year": 2023,
+    "role": "fullstack"
   },
   {
-    "title": "Portafolio",
-    "path": "https://portfolio-tobias-moreno.netlify.app/",
-    "description": "Portafolio desarrollado en Angular 18, utilizando TypeScript y Bootstrap. Es completamente responsive, incluye todos los proyectos que he creado, mi recorrido y un formulario de contacto.",
+    "id": "portfolio",
+    "title": "Portfolio",
+    "description": "This portfolio — built with Angular 21, Tailwind CSS v4, and a signal-based architecture. Features bilingual content (EN/ES), system-aware dark mode, lazy-loaded sections, and typed content models. Designed to communicate technical depth and product mindset.",
     "image": "assets/img/portfolio.png",
-    "github": "https://github.com/TobiasMoreno/portfolio-tobias-moreno",
-    "develop": false
-  },
-  {
-    "title": "E-Commerce in Angular",
-    "path": "https://e-commerce-angular-tobias-moreno.netlify.app/",
-    "description": "E-commerce desarrollado en Angular 18, utilizando TypeScript y Bootstrap. Es completamente responsive, incluye un carrito de compras y ofrece una excelente experiencia de usuario.",
-    "image": "assets/img/landing-page-angular-17.png",
-    "github": "https://github.com/TobiasMoreno/e-commerce-angular",
-    "develop": false
-  },
-  {
-    "title": "Lider Trofeos",
-    "path": "https://lider-trofeos.netlify.app",
-    "description": "Pagina Web desarrollada con Angular para una empresa. Es completamente responsive, asegurando una increíble experiencia de usuario",
-    "image": "assets/img/lider.png",
-    "github": "https://github.com/TobiasMoreno/lider-trofeos",
-    "develop": false
-  },
-  {
-    "title": "Landing page in Angular",
-    "path": "https://landing-page-angular-17-tobias-moreno.netlify.app",
-    "description": "E-commerce creado en Angular 17 con TypeScript y Bootstrap. Ofrece una lista completa de productos y asegura una excelente experiencia de usuario.",
-    "image": "assets/img/landing-page-angular-17.png",
-    "github": "https://github.com/TobiasMoreno/Landing-Page-Angular-17",
-    "develop": false
-  },
-  {
-    "title": "Calculator in Angular",
-    "path": "https://calculator-angular-tobias-moreno.netlify.app",
-    "description": "Calculadora desarrollada con Angular 18 y TypeScript, ofreciendo funcionalidades básicas con una interfaz simple y eficiente.",
-    "image": "assets/img/calculator-angular.png",
-    "github": "https://github.com/TobiasMoreno/angular-calculator",
-    "develop": false
-  },
-  {
-    "title": "Toro Wine",
-    "path": "https://toro-wine-tobias-moreno.netlify.app",
-    "description": "Página de Toro Wine para un equipo de fútbol y e-sports, desarrollada con HTML, CSS y JavaScript. Es completamente responsive y se adapta a diferentes dispositivos.",
-    "image": "assets/img/toro-wine.png",
-    "github": "https://github.com/TobiasMoreno/ToroWine",
-    "develop": false
-  },
-  {
-    "title": "Black Bull E-Commerce",
-    "path": "https://e-commerce-tobias-moreno-freelancer.netlify.app",
-    "description": "E-commerce desarrollado con HTML y CSS, completamente responsive para adaptarse a diversos dispositivos.",
-    "image": "assets/img/black-bull.png",
-    "github": "https://github.com/TobiasMoreno/ECommerce",
-    "develop": false
-  },
-  {
-    "title": "Blog de Cafe",
-    "path": "https://blog-de-cafe-tobias-moreno.netlify.app",
-    "description": "Blog de café creado con HTML y CSS, totalmente responsive, diseñado para explorar y comprender los fundamentos básicos de la programación web.",
-    "image": "assets/img/blog-cafe.png",
-    "develop": false
-  },
-  {
-    "title": "Store",
-    "path": "https://tobias-moreno-store-freelancer.netlify.app",
-    "description": "Store creado con HTML y CSS, totalmente responsive, diseñado para explorar y comprender los fundamentos básicos de la programación web.",
-    "image": "assets/img/store.png",
-    "github": "https://github.com/TobiasMoreno/Store",
-    "develop": false
+    "liveUrl": "https://tobiasmoreno.dev",
+    "repoUrl": "https://github.com/TobiasMoreno/portfolio-tobias-moreno",
+    "tech": ["Angular", "TypeScript", "Tailwind CSS", "Signals"],
+    "featured": true,
+    "year": 2025,
+    "role": "frontend"
   }
 ]

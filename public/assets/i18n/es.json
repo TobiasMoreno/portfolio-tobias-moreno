@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "stack": "Stack",
+    "writing": "Blog",
+    "contact": "Contacto"
+  },
+  "theme": {
+    "toggle": {
+      "label": "Tema",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema"
+    }
+  },
+  "locale": {
+    "label": "Idioma",
+    "en": "English",
+    "es": "Español"
+  },
+  "footer": {
+    "copyright": "© 2026 Tobias Moreno",
+    "location": "Córdoba, Argentina",
+    "built_with": "Construido con Angular y Tailwind CSS"
+  },
+  "hero": {
+    "tagline": "Backend Engineer · Product Engineer",
+    "description": "Construyo APIs REST, microservicios e integraciones en entornos fintech. Me importa el diseño de sistemas, el impacto real en el usuario y los outcomes — no solo cerrar tickets.",
+    "cta_projects": "Ver proyectos",
+    "cta_contact": "Contactarme",
+    "social_github": "GitHub",
+    "social_linkedin": "LinkedIn",
+    "cv_es": "CV (ES)",
+    "cv_en": "CV (EN)"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "paragraph_1": "Soy Backend Engineer y Product Engineer en Córdoba, Argentina, trabajando en Techforb / Creditú en un contexto fintech. Mi trabajo diario involucra construir y evolucionar APIs REST, microservicios e integraciones externas — con foco en rendimiento, resiliencia y observabilidad.",
+    "paragraph_2": "Pienso el software desde los dos lados: el técnico y el de producto. Me importa el impacto para el usuario, no solo la corrección técnica. Uso logs, métricas y feedback para tomar mejores decisiones, iterar rápido y evitar sobreingenierizar.",
+    "chip_product": "Mentalidad de producto",
+    "chip_observability": "Observabilidad",
+    "chip_impact": "Impacto sobre complejidad",
+    "chip_resilience": "Resiliencia",
+    "chip_async": "Pensamiento asincrónico",
+    "chip_iterate": "Iterar rápido"
+  },
+  "mindset": {
+    "title": "Cómo pienso",
+    "subtitle": "Principios de ingeniería que aplico todos los días.",
+    "card1_title": "Pensar en problemas, no en tickets",
+    "card1_desc": "Antes de escribir una línea de código, me pregunto qué problema estamos resolviendo y por qué le importa al usuario.",
+    "card2_title": "Evaluar trade-offs deliberadamente",
+    "card2_desc": "Calidad, simplicidad, velocidad y mantenibilidad siempre están en tensión. Nombro el trade-off y tomo una decisión consciente.",
+    "card3_title": "Usar métricas, logs y feedback",
+    "card3_desc": "El comportamiento en producción es la mejor fuente de verdad. Uso logs estructurados y observabilidad para tomar mejores decisiones.",
+    "card4_title": "Iterativo antes que perfecto",
+    "card4_desc": "Una solución funcional entregada hoy es mejor que una solución perfecta que nunca se entrega. Scopeo pequeño, entrego y mejoro.",
+    "card5_title": "Impacto sobre complejidad innecesaria",
+    "card5_desc": "Si la complejidad extra no agrega valor proporcional, es un pasivo. Mantengo las cosas tan simples como el problema lo permite."
+  },
+  "experience": {
+    "title": "Experiencia",
+    "present": "Presente",
+    "current_badge": "Actual",
+    "highlights_title": "En qué trabajé",
+    "stack_title": "Stack"
+  },
+  "projects": {
+    "title": "Proyectos",
+    "subtitle": "Trabajo seleccionado que muestra mi criterio técnico.",
+    "demo": "Demo en vivo",
+    "repo": "Repositorio",
+    "view_all": "Ver todo en GitHub"
+  },
+  "stack": {
+    "title": "Stack tecnológico",
+    "subtitle": "Herramientas y prácticas con las que trabajo.",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "cloud": "Cloud / DevOps",
+    "testing": "Testing",
+    "practices": "Prácticas"
+  },
+  "writing": {
+    "title": "Blog",
+    "subtitle": "Escribo sobre ingeniería backend, mentalidad de producto y el arte de construir software.",
+    "cta": "Leer mi journal"
+  },
+  "contact": {
+    "title": "Hablemos",
+    "subtitle": "Abierto a nuevas oportunidades, colaboraciones y conversaciones interesantes.",
+    "location": "Córdoba, Argentina",
+    "copy_email": "Copiar email",
+    "copied": "¡Copiado!",
+    "availability": "Disponible para roles full-time y proyectos freelance."
+  }
+}

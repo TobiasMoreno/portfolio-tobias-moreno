@@ -1,0 +1,34 @@
+[
+  { "id": "java", "name": "Java", "category": "backend" },
+  { "id": "spring-boot", "name": "Spring Boot", "category": "backend" },
+  { "id": "nestjs", "name": "NestJS", "category": "backend" },
+  { "id": "rest-apis", "name": "REST APIs", "category": "backend" },
+  { "id": "microservices", "name": "Microservices", "category": "backend" },
+  { "id": "jpa-hibernate", "name": "JPA / Hibernate", "category": "backend" },
+  { "id": "sql", "name": "SQL", "category": "backend" },
+  { "id": "nosql", "name": "NoSQL", "category": "backend" },
+
+  { "id": "angular", "name": "Angular", "category": "frontend" },
+  { "id": "vue3", "name": "Vue 3", "category": "frontend" },
+  { "id": "typescript", "name": "TypeScript", "category": "frontend" },
+  { "id": "tailwind", "name": "Tailwind CSS", "category": "frontend" },
+
+  { "id": "aws", "name": "AWS", "category": "cloud" },
+  { "id": "aws-lambda", "name": "AWS Lambda", "category": "cloud" },
+  { "id": "github-actions", "name": "GitHub Actions", "category": "cloud" },
+  { "id": "cicd", "name": "CI/CD", "category": "cloud" },
+
+  { "id": "junit", "name": "JUnit", "category": "testing" },
+  { "id": "mockito", "name": "Mockito", "category": "testing" },
+  { "id": "cypress", "name": "Cypress", "category": "testing" },
+  { "id": "vitest", "name": "Vitest", "category": "testing" },
+
+  { "id": "clean-code", "name": "Clean Code", "category": "practices" },
+  { "id": "design-patterns", "name": "Design Patterns", "category": "practices" },
+  { "id": "observability", "name": "Observability", "category": "practices" },
+  { "id": "structured-logging", "name": "Structured Logging", "category": "practices" },
+  { "id": "resilience", "name": "Resilience", "category": "practices" },
+  { "id": "async-processing", "name": "Async Processing", "category": "practices" },
+  { "id": "spec-driven", "name": "Spec-Driven Development", "category": "practices" },
+  { "id": "ai-assisted", "name": "AI-assisted Development", "category": "practices" }
+]

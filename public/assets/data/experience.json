@@ -1,0 +1,82 @@
+[
+  {
+    "id": "techforb-backend-2025",
+    "role": "Backend / Full Stack Developer",
+    "company": "Techforb / Creditú",
+    "companyLogo": "assets/img/creditu.png",
+    "project": "SaaS de Créditos Hipotecarios — Angular / NestJS / Spring Boot",
+    "location": "Córdoba, Argentina",
+    "startDate": "Marzo 2025",
+    "current": true,
+    "highlights": [
+      "Designed and implemented business logic in a microservices architecture.",
+      "Optimized external integrations, reducing average response times by 45%.",
+      "Implemented asynchronous processing with AWS Lambda to decouple critical operations and improve scalability.",
+      "Applied resilience strategies — retries, timeouts, and error handling — to prevent failures in external integrations.",
+      "Implemented structured logging to improve observability, debugging, and production behavior analysis.",
+      "Built CI/CD pipelines with GitHub Actions, automating unit tests, E2E tests, linting, tag-based deploys, and releases.",
+      "Integrated AI agents through a Spec-Driven Development (SDD) workflow — explore, propose, apply, archive — for contract definition, validations, and edge case anticipation.",
+      "Participated in technical decisions, evaluating trade-offs between performance, maintainability, scalability, and user experience."
+    ],
+    "highlightsEs": [
+      "Diseño e implementación de lógica de negocio en arquitectura de microservicios.",
+      "Optimización de integraciones externas, reduciendo el tiempo de respuesta en un 45%.",
+      "Implementación de procesamiento asincrónico mediante AWS Lambda para desacoplar operaciones críticas y mejorar la escalabilidad.",
+      "Aplicación de estrategias de resiliencia como retries, timeouts y manejo de errores para evitar fallos en integraciones externas.",
+      "Implementación de logging estructurado para mejorar observabilidad, debugging y análisis de comportamiento en producción.",
+      "Implementación de pipelines CI/CD con GitHub Actions, automatizando tests unitarios, tests E2E, linting, deploy con tags y releases.",
+      "Integración de agentes de IA mediante flujo Spec-Driven Development (SDD), utilizando etapas de explore, propose, apply y archive para definición de contratos, validaciones y anticipación de edge cases.",
+      "Participación en decisiones técnicas evaluando trade-offs entre performance, mantenibilidad, escalabilidad y experiencia de usuario."
+    ],
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "NestJS",
+      "Angular",
+      "AWS Lambda",
+      "Microservices",
+      "REST APIs",
+      "Resilience4j",
+      "GitHub Actions",
+      "CI/CD",
+      "PostgreSQL",
+      "Structured Logging"
+    ]
+  },
+  {
+    "id": "techforb-fullstack-2024",
+    "role": "Full Stack Developer",
+    "company": "Techforb",
+    "companyLogo": "assets/img/creditu.png",
+    "project": "Plataforma de Reclutamiento Interno — Angular & Spring Boot",
+    "location": "Córdoba, Argentina",
+    "startDate": "Marzo 2024",
+    "endDate": "Marzo 2025",
+    "current": false,
+    "highlights": [
+      "Backend development with Java and Spring Boot, applying layered architecture and design best practices.",
+      "Frontend development with Angular, integrating interfaces with REST APIs and reusable components.",
+      "Authentication and security implementation with Spring Security.",
+      "Data persistence with JPA/Hibernate and SQL query optimization.",
+      "Automated testing with JUnit and Mockito."
+    ],
+    "highlightsEs": [
+      "Desarrollo backend con Java y Spring Boot, aplicando arquitectura en capas y buenas prácticas de diseño.",
+      "Desarrollo frontend con Angular, integrando interfaces con APIs REST y componentes reutilizables.",
+      "Implementación de autenticación y seguridad con Spring Security.",
+      "Persistencia de datos con JPA/Hibernate y optimización de consultas SQL.",
+      "Implementación de pruebas automatizadas con JUnit y Mockito."
+    ],
+    "stack": [
+      "Java",
+      "Spring Boot",
+      "Angular",
+      "Spring Security",
+      "JPA/Hibernate",
+      "JUnit",
+      "Mockito",
+      "REST APIs",
+      "SQL"
+    ]
+  }
+]

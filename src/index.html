@@ -1,58 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Portfolio Moreno Tobias</title>
-    <base href="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="assets/img/Logo.jpg"
-      id="favicon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- Bootstrap Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
-    <!-- Card Type Icons -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      function updateFavicon() {
-        const favicon = document.getElementById("favicon");
-        const isDarkMode = window.matchMedia(
-          "(prefers-color-scheme: dark)"
-        ).matches;
+<head>
+  <meta charset="utf-8" />
+  <title>Tobias Moreno — Backend & Product Engineer</title>
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        if (isDarkMode) {
-          favicon.href = "assets/img/logo-dark.png";
-        } else {
-          favicon.href = "assets/img/logo-light.jpg";
-        }
-      }
+  <!-- FOUC prevention: apply dark class before Angular bootstraps -->
+  <script>
+    (function () {
+      var t = localStorage.getItem('tm-theme') || 'system';
+      var dark = t === 'dark' || (t === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+      if (dark) document.documentElement.classList.add('dark');
+    })();
+  </script>
 
-      window
-        .matchMedia("(prefers-color-scheme: dark)")
-        .addEventListener("change", updateFavicon);
-      window.onload = updateFavicon;
-    </script>
-  </head>
-  <body class="demo-wrap">
-    <div class="demo-content">
-      <div class="container">
-        <app-root></app-root>
-      </div>
-    </div>
-  </body>
+  <!-- SEO -->
+  <meta name="description" content="Backend Engineer & Product Engineer based in Córdoba, Argentina. I build REST APIs, microservices, and integrations in fintech environments — focused on system design, user impact, and real outcomes." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Tobias Moreno — Backend & Product Engineer" />
+  <meta property="og:description" content="Backend Engineer & Product Engineer based in Córdoba, Argentina. REST APIs, microservices, and integrations — focused on system design and real outcomes." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://tobiasmoreno.dev" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Tobias Moreno — Backend & Product Engineer" />
+  <meta name="twitter:description" content="Backend Engineer & Product Engineer based in Córdoba, Argentina." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+
+  <!-- Favicon: light mode → logo-light (black bg), dark mode → logo-dark (white on transparent) -->
+  <link rel="icon" type="image/jpeg" href="assets/img/logo-light.jpg" />
+  <link rel="icon" type="image/png" media="(prefers-color-scheme: dark)" href="assets/img/logo-dark.png" />
+</head>
+<body>
+  <app-root></app-root>
+</body>
 </html>

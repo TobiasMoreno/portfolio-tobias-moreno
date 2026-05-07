@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "about": "About",
+    "experience": "Experience",
+    "projects": "Projects",
+    "stack": "Stack",
+    "writing": "Writing",
+    "contact": "Contact"
+  },
+  "theme": {
+    "toggle": {
+      "label": "Theme",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    }
+  },
+  "locale": {
+    "label": "Language",
+    "en": "English",
+    "es": "Español"
+  },
+  "footer": {
+    "copyright": "© 2026 Tobias Moreno",
+    "location": "Córdoba, Argentina",
+    "built_with": "Built with Angular & Tailwind CSS"
+  },
+  "hero": {
+    "tagline": "Backend Engineer · Product Engineer",
+    "description": "I build REST APIs, microservices, and integrations in fintech environments. I care about system design, user impact, and real outcomes — not just closing tickets.",
+    "cta_projects": "View Projects",
+    "cta_contact": "Get in touch",
+    "social_github": "GitHub",
+    "social_linkedin": "LinkedIn",
+    "cv_es": "CV (ES)",
+    "cv_en": "CV (EN)"
+  },
+  "about": {
+    "title": "About",
+    "paragraph_1": "I'm a Backend Engineer and Product Engineer based in Córdoba, Argentina, working at Techforb / Creditú in a fintech context. My day-to-day involves building and evolving REST APIs, microservices, and external integrations — with a focus on performance, resilience, and observability.",
+    "paragraph_2": "I think about software from both sides: the technical and the product. I care about user impact, not just technical correctness. I use logs, metrics, and feedback to make better decisions, iterate fast, and avoid over-engineering.",
+    "chip_product": "Product mindset",
+    "chip_observability": "Observability",
+    "chip_impact": "Impact over complexity",
+    "chip_resilience": "Resilience",
+    "chip_async": "Async thinking",
+    "chip_iterate": "Iterate fast"
+  },
+  "mindset": {
+    "title": "How I Think",
+    "subtitle": "Engineering principles I apply every day.",
+    "card1_title": "Think in problems, not tickets",
+    "card1_desc": "Before writing a line of code, I ask what problem we're actually solving and why it matters to the user.",
+    "card2_title": "Evaluate trade-offs deliberately",
+    "card2_desc": "Quality, simplicity, speed, and maintainability are always in tension. I name the trade-off and make a conscious choice.",
+    "card3_title": "Use metrics, logs, and feedback",
+    "card3_desc": "Production behavior is the best source of truth. I use structured logs and observability to inform better decisions.",
+    "card4_title": "Iterative over perfect",
+    "card4_desc": "A working solution shipped today beats a perfect solution shipped never. I scope small, deliver, and improve.",
+    "card5_title": "Impact over unnecessary complexity",
+    "card5_desc": "If extra complexity doesn't add proportional value, it's a liability. I keep things as simple as the problem allows."
+  },
+  "experience": {
+    "title": "Experience",
+    "present": "Present",
+    "current_badge": "Current",
+    "highlights_title": "What I worked on",
+    "stack_title": "Stack"
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "Selected work that shows my technical judgment.",
+    "demo": "Live demo",
+    "repo": "Repository",
+    "view_all": "View all on GitHub"
+  },
+  "stack": {
+    "title": "Tech Stack",
+    "subtitle": "Tools and practices I work with.",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "cloud": "Cloud / DevOps",
+    "testing": "Testing",
+    "practices": "Practices"
+  },
+  "writing": {
+    "title": "Writing",
+    "subtitle": "I write about backend engineering, product thinking, and the craft of building software.",
+    "cta": "Read my journal"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Open to new opportunities, collaborations, and interesting conversations.",
+    "location": "Córdoba, Argentina",
+    "copy_email": "Copy email",
+    "copied": "Copied!",
+    "availability": "Currently open to full-time roles and freelance projects."
+  }
+}
