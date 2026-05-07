@@ -14,7 +14,6 @@ import { LocaleService } from '../../../core/locale/locale.service';
           <a href="https://www.linkedin.com/in/tobiasmoreno/" target="_blank" rel="noopener"
              class="hover:text-[--color-fg] transition-colors">LinkedIn</a>
         </div>
-        <p>{{ locale.t('footer.built_with') }}</p>
       </div>
     </footer>
   `,

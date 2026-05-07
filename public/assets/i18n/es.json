@@ -22,8 +22,7 @@
   },
   "footer": {
     "copyright": "© 2026 Tobias Moreno",
-    "location": "Córdoba, Argentina",
-    "built_with": "Construido con Angular y Tailwind CSS"
+    "location": "Córdoba, Argentina"
   },
   "hero": {
     "tagline": "Backend Engineer · Product Engineer",

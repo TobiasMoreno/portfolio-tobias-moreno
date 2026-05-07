@@ -1,29 +1,5 @@
 [
   {
-    "id": "think-before-prompt",
-    "title": "Think Before Prompt",
-    "description": "Interactive educational platform built with Angular 19 and Tailwind CSS for structured learning about AI and Angular. Features dynamic navigation, interactive components, practical code examples, and a modern interface with CSS animations and responsive design.",
-    "image": "assets/img/think-before-prompt.png",
-    "liveUrl": "https://think-before-prompts-tobias-moreno.netlify.app/",
-    "repoUrl": "https://github.com/TobiasMoreno/think-before-prompt",
-    "tech": ["Angular", "TypeScript", "Tailwind CSS"],
-    "featured": true,
-    "year": 2024,
-    "role": "frontend"
-  },
-  {
-    "id": "gamedle",
-    "title": "GameDLE",
-    "description": "Web app built with Angular 19 and Tailwind CSS — a collection of daily games inspired by Wordle. Includes multiple game modes (Wordle, OnePieceDLE, LolDle, DragonBallDle) with intuitive navigation and local data persistence.",
-    "image": "assets/img/gamedle.png",
-    "liveUrl": "https://gamedle-tobias-moreno-dev.netlify.app",
-    "repoUrl": "https://github.com/TobiasMoreno/game-dle",
-    "tech": ["Angular", "TypeScript", "Tailwind CSS", "LocalStorage"],
-    "featured": true,
-    "year": 2024,
-    "role": "frontend"
-  },
-  {
     "id": "admin-panel-nestjs",
     "title": "Admin Panel — Backend API (NestJS)",
     "description": "REST API built with NestJS and PostgreSQL on Neon, with file storage on Cloudinary. Implements Firebase authentication, input validation, protected routes, exception handling, and modular architecture following best practices.",

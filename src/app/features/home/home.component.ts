@@ -32,12 +32,6 @@ import { ContactSectionComponent } from '../sections/contact/contact-section.com
     }
 
     @defer (on viewport) {
-      <app-mindset-section />
-    } @placeholder {
-      <div class="min-h-[400px]"></div>
-    }
-
-    @defer (on viewport) {
       <app-experience-section />
     } @placeholder {
       <div class="min-h-[400px]"></div>
@@ -57,6 +51,12 @@ import { ContactSectionComponent } from '../sections/contact/contact-section.com
 
     @defer (on viewport) {
       <app-writing-section />
+    } @placeholder {
+      <div class="min-h-[400px]"></div>
+    }
+
+    @defer (on viewport) {
+      <app-mindset-section />
     } @placeholder {
       <div class="min-h-[400px]"></div>
     }
