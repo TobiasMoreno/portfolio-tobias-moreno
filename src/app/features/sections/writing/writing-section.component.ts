@@ -18,7 +18,7 @@ import { ContentService } from '../../../data/content.service';
       @if (posts().length === 0) {
         <div class="flex flex-col items-start gap-6 py-8 px-6 rounded-xl border border-[--color-border]">
           <p class="text-[--color-muted] text-sm">
-            Publico notas sobre ingeniería backend, decisiones de diseño y el oficio de construir software.
+            {{ locale.t('writing.fallback') }}
           </p>
           <a href="https://tobias-moreno.netlify.app/" target="_blank" rel="noopener"
              class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg border border-[--color-border]

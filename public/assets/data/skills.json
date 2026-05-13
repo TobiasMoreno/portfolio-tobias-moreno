@@ -9,7 +9,6 @@
   { "id": "nosql", "name": "NoSQL", "category": "backend" },
 
   { "id": "angular", "name": "Angular", "category": "frontend" },
-  { "id": "vue3", "name": "Vue 3", "category": "frontend" },
   { "id": "typescript", "name": "TypeScript", "category": "frontend" },
   { "id": "tailwind", "name": "Tailwind CSS", "category": "frontend" },
 

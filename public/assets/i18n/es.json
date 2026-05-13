@@ -4,7 +4,7 @@
     "experience": "Experiencia",
     "projects": "Proyectos",
     "stack": "Stack",
-    "writing": "Blog",
+    "writing": "Journal",
     "contact": "Contacto"
   },
   "theme": {
@@ -32,7 +32,9 @@
     "social_github": "GitHub",
     "social_linkedin": "LinkedIn",
     "cv_es": "CV (ES)",
-    "cv_en": "CV (EN)"
+    "cv_en": "CV (EN)",
+    "cta_journal": "Journal",
+    "cta_journal_aria": "Abrir el journal de Tobias Moreno en una nueva pestaña"
   },
   "about": {
     "title": "Sobre mí",
@@ -83,8 +85,9 @@
     "practices": "Prácticas"
   },
   "writing": {
-    "title": "Blog",
-    "subtitle": "Escribo sobre ingeniería backend, mentalidad de producto y el arte de construir software.",
+    "title": "Journal",
+    "subtitle": "Aprendizajes técnicos, decisiones profesionales y errores reales. Todo en público, todo sin filtro.",
+    "fallback": "Aprendizajes técnicos, decisiones profesionales y errores reales. Todo en público, todo sin filtro.",
     "cta": "Leer mi journal"
   },
   "contact": {

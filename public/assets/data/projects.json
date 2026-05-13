@@ -28,7 +28,7 @@
     "title": "Portfolio",
     "description": "This portfolio — built with Angular 21, Tailwind CSS v4, and a signal-based architecture. Features bilingual content (EN/ES), system-aware dark mode, lazy-loaded sections, and typed content models. Designed to communicate technical depth and product mindset.",
     "image": "assets/img/portfolio.png",
-    "liveUrl": "https://tobiasmoreno.dev",
+    "liveUrl": "https://portfolio-tobias-moreno.netlify.app",
     "repoUrl": "https://github.com/TobiasMoreno/portfolio-tobias-moreno",
     "tech": ["Angular", "TypeScript", "Tailwind CSS", "Signals"],
     "featured": true,

@@ -9,7 +9,7 @@
     "startDate": "Marzo 2025",
     "current": true,
     "highlights": [
-      "Designed and implemented business logic in a microservices architecture.",
+      "Owned end-to-end backend features in a microservices architecture, from spec definition to production deployment and post-release observability.",
       "Optimized external integrations, reducing average response times by 45%.",
       "Implemented asynchronous processing with AWS Lambda to decouple critical operations and improve scalability.",
       "Applied resilience strategies — retries, timeouts, and error handling — to prevent failures in external integrations.",
@@ -19,7 +19,7 @@
       "Participated in technical decisions, evaluating trade-offs between performance, maintainability, scalability, and user experience."
     ],
     "highlightsEs": [
-      "Diseño e implementación de lógica de negocio en arquitectura de microservicios.",
+      "Ownership de features de backend de punta a punta en una arquitectura de microservicios — desde la definición del spec hasta el deploy a producción y la observabilidad post-release.",
       "Optimización de integraciones externas, reduciendo el tiempo de respuesta en un 45%.",
       "Implementación de procesamiento asincrónico mediante AWS Lambda para desacoplar operaciones críticas y mejorar la escalabilidad.",
       "Aplicación de estrategias de resiliencia como retries, timeouts y manejo de errores para evitar fallos en integraciones externas.",

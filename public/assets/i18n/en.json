@@ -32,7 +32,9 @@
     "social_github": "GitHub",
     "social_linkedin": "LinkedIn",
     "cv_es": "CV (ES)",
-    "cv_en": "CV (EN)"
+    "cv_en": "CV (EN)",
+    "cta_journal": "Journal",
+    "cta_journal_aria": "Open Tobias Moreno's journal in a new tab"
   },
   "about": {
     "title": "About",
@@ -83,8 +85,9 @@
     "practices": "Practices"
   },
   "writing": {
-    "title": "Writing",
-    "subtitle": "I write about backend engineering, product thinking, and the craft of building software.",
+    "title": "Journal",
+    "subtitle": "Technical learnings, professional decisions, and real mistakes. All in public, all unfiltered.",
+    "fallback": "Technical learnings, professional decisions, and real mistakes. All in public, all unfiltered.",
     "cta": "Read my journal"
   },
   "contact": {

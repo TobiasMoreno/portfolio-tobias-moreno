@@ -57,6 +57,11 @@ import { LocaleService } from '../../../core/locale/locale.service';
                class="text-sm text-[--color-muted] hover:text-[--color-fg] transition-colors px-2.5 py-1 rounded border border-[--color-border] hover:border-[--color-accent]">
               {{ locale.t('hero.cv_en') }}
             </a>
+            <a href="https://tobias-moreno.netlify.app" target="_blank" rel="noopener noreferrer"
+               [attr.aria-label]="locale.t('hero.cta_journal_aria')"
+               class="text-sm text-[--color-muted] hover:text-[--color-fg] transition-colors px-2.5 py-1 rounded border border-[--color-border] hover:border-[--color-accent]">
+              {{ locale.t('hero.cta_journal') }}
+            </a>
           </div>
         </div>
 
