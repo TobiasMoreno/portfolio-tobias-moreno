@@ -84,6 +84,26 @@
     "testing": "Testing",
     "practices": "Practices"
   },
+  "certifications": {
+    "eyebrow": "Complementary training",
+    "title": "Certifications with direction",
+    "subtitle": "Complementary training focused on artificial intelligence, agents, AI-assisted development, and professional communication. These certifications support my current direction as a Backend / Product Engineer, combining technical foundations, product judgment, and agent-assisted workflows to design clearer, more maintainable, and more scalable solutions.",
+    "focus_ai_development": "AI-assisted development",
+    "focus_agents": "AI agents",
+    "focus_spec_driven": "Spec-Driven Development",
+    "focus_product": "Product Engineering",
+    "focus_communication": "Professional communication",
+    "card_claude_101_title": "Claude 101",
+    "card_claude_101_desc": "Foundations for using Claude in productivity, analysis, and AI-assisted software development workflows.",
+    "card_claude_fluency_title": "Claude AI Fluency",
+    "card_claude_fluency_desc": "Fluency using Claude to structure problems, improve prompts, validate scenarios, and accelerate work processes.",
+    "card_coding_agents_title": "Coding Agents Seminar",
+    "card_coding_agents_desc": "Training focused on using AI agents in development flows, automation, and software delivery improvement.",
+    "card_soft_skills_title": "Soft Skills",
+    "card_soft_skills_desc": "Training in communication, collaboration, adaptation, and professional skills applied to teamwork.",
+    "card_degree_title": "Degree Certificate",
+    "card_degree_desc": "University Technician in Programming - UTN."
+  },
   "writing": {
     "title": "Journal",
     "subtitle": "Technical learnings, professional decisions, and real mistakes. All in public, all unfiltered.",

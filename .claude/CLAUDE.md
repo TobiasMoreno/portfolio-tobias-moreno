@@ -15,6 +15,8 @@ This portfolio is a **job-search artifact**, not a hobby site. It's the first th
 4. Engineering judgment — names trade-offs, picks deliberately.
 5. AI as accelerator — uses agents and SDD as a force multiplier, not a crutch.
 
+The certifications section supports this narrative only when it is framed as a professional direction: AI-assisted development, agents, Spec-Driven Development, product judgment, and communication. It must not read like a generic course list.
+
 ## Audience-fit principles ("MELI ADN", encoded as engineering values)
 
 When writing copy, choosing what to surface, or evaluating a change, optimize for these — they are what top LatAm tech orgs look for:
@@ -50,7 +52,7 @@ src/
 │   │   └── models/                // Project, Experience, Skill (+ SkillCategory), Post
 │   └── features/
 │       ├── home/home.component.ts          // Composes all sections, @defer (on viewport) for non-hero
-│       └── sections/{hero,about,mindset,experience,projects,stack,writing,contact}/
+│       └── sections/{hero,about,mindset,experience,projects,stack,certifications,writing,contact}/
 ├── index.html                     // Inline FOUC-prevention script reads tm-theme before bootstrap
 ├── main.ts
 └── styles.css                     // Tailwind v4 (@import "tailwindcss"), oklch tokens, .dark variant
@@ -68,11 +70,13 @@ Build: `@angular/build:application`. Dev: `npm start` (ng serve). Build: `npm ru
 
 - **Content lives in JSON, not in components.** New projects/experience/skills/posts → edit `public/assets/data/*.json`. Don't hardcode content in templates.
 - **i18n is mandatory and keys must be in sync.** Any new UI string must be added to **both** `public/assets/i18n/en.json` and `public/assets/i18n/es.json` under the same dot-path. The locale service will fall back to the raw key if missing — that's a bug, not a feature.
+- **Certifications are a small static section.** `features/sections/certifications/certifications-section.component.ts` keeps only compact metadata (short codes and external certificate URLs). All visible copy lives under the `certifications` namespace in both i18n files. If certificates become dynamic, move them to `public/assets/data/` and add a typed model.
 - **Models are typed.** Adding a content field means updating the matching interface in `src/app/shared/models/*.model.ts`.
 - **Tone for English copy:** sober, technical, outcome-oriented. Use active voice, past-tense for shipped work, present-tense for current ownership.
 - **Tone for Spanish copy:** rioplatense neutro, profesional. No traducciones literales del inglés.
 - **No claims without backing.** If you write a metric ("45%", "p99 < 100ms"), it must be defensible in an interview. If it can't be defended, soften it.
 - **Don't add filler sections.** A new section must earn its place by communicating one of the five narrative pillars above.
+- **Certifications placement.** Keep certifications after `Stack` and before `Journal`: it reinforces the AI/product direction after the technical stack, without competing with `Experience` or `Projects`.
 
 ## TypeScript Best Practices
 
@@ -143,6 +147,7 @@ Build: `@angular/build:application`. Dev: `npm start` (ng serve). Build: `npm ru
 ## Routing & SEO
 
 - Single route `''` lazy-loads `HomeComponent`. Anchor scrolling is enabled (`withInMemoryScrolling`), so navigation uses `[routerLink]="'/'" [fragment]="'projects'"`.
+- Current home section order: Hero, About, Experience, Projects, Stack, Certifications, Journal, Contact. Keep Hero eager and below-the-fold sections deferred with `@defer (on viewport)`.
 - `SeoService.setHomeMetadata()` runs in `HomeComponent.ngOnInit`. Update it (and `index.html` Open Graph / Twitter tags) when the headline pitch changes.
 
 ## Operational notes

@@ -84,6 +84,26 @@
     "testing": "Testing",
     "practices": "Prácticas"
   },
+  "certifications": {
+    "eyebrow": "Formación complementaria",
+    "title": "Certificaciones con dirección",
+    "subtitle": "Formación complementaria orientada a inteligencia artificial, agentes, desarrollo asistido por IA y comunicación profesional. Estas certificaciones acompañan mi enfoque actual como Backend / Product Engineer, combinando fundamentos técnicos, criterio de producto y workflows asistidos por agentes para diseñar soluciones más claras, mantenibles y escalables.",
+    "focus_ai_development": "Desarrollo asistido por IA",
+    "focus_agents": "Agentes de IA",
+    "focus_spec_driven": "Spec-Driven Development",
+    "focus_product": "Product Engineering",
+    "focus_communication": "Comunicación profesional",
+    "card_claude_101_title": "Claude 101",
+    "card_claude_101_desc": "Fundamentos de uso de Claude aplicado a productividad, análisis y desarrollo asistido por IA.",
+    "card_claude_fluency_title": "Claude AI Fluency",
+    "card_claude_fluency_desc": "Fluidez en el uso de Claude para estructurar problemas, mejorar prompts, validar escenarios y acelerar procesos de trabajo.",
+    "card_coding_agents_title": "Seminario Coding Agents",
+    "card_coding_agents_desc": "Formación orientada al uso de agentes de IA en flujos de desarrollo, automatización y mejora del proceso de construcción de software.",
+    "card_soft_skills_title": "Habilidades Blandas",
+    "card_soft_skills_desc": "Formación en comunicación, colaboración, adaptación y habilidades profesionales aplicadas al trabajo en equipo.",
+    "card_degree_title": "Constancia de Título",
+    "card_degree_desc": "Técnico Universitario en Programación - UTN."
+  },
   "writing": {
     "title": "Journal",
     "subtitle": "Aprendizajes técnicos, decisiones profesionales y errores reales. Todo en público, todo sin filtro.",

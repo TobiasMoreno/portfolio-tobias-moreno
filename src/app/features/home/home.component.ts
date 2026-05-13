@@ -6,6 +6,7 @@ import { MindsetSectionComponent } from '../sections/mindset/mindset-section.com
 import { ExperienceSectionComponent } from '../sections/experience/experience-section.component';
 import { ProjectsSectionComponent } from '../sections/projects/projects-section.component';
 import { StackSectionComponent } from '../sections/stack/stack-section.component';
+import { CertificationsSectionComponent } from '../sections/certifications/certifications-section.component';
 import { WritingSectionComponent } from '../sections/writing/writing-section.component';
 import { ContactSectionComponent } from '../sections/contact/contact-section.component';
 
@@ -19,6 +20,7 @@ import { ContactSectionComponent } from '../sections/contact/contact-section.com
     ExperienceSectionComponent,
     ProjectsSectionComponent,
     StackSectionComponent,
+    CertificationsSectionComponent,
     WritingSectionComponent,
     ContactSectionComponent,
   ],
@@ -45,6 +47,12 @@ import { ContactSectionComponent } from '../sections/contact/contact-section.com
 
     @defer (on viewport) {
       <app-stack-section />
+    } @placeholder {
+      <div class="min-h-[400px]"></div>
+    }
+
+    @defer (on viewport) {
+      <app-certifications-section />
     } @placeholder {
       <div class="min-h-[400px]"></div>
     }
