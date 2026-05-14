@@ -1,24 +1,58 @@
 [
   {
+    "id": "tobias-agent-toolkit",
+    "title": "tobias-agent-toolkit",
+    "titleEs": "tobias-agent-toolkit",
+    "description": "Personal multi-agent marketplace that turns reusable workflows, skills, agents, rules, and OpenSpec templates into installable plugins for Claude Code and Codex from a shared core.",
+    "descriptionEs": "Marketplace personal multiagente que convierte workflows reutilizables, skills, agentes, reglas y templates de OpenSpec en plugins instalables para Claude Code y Codex desde un core compartido.",
+    "image": "assets/img/tobias-agent-toolkit.png",
+    "repoUrl": "https://github.com/TobiasMoreno/marketplace",
+    "tech": [
+      "Node.js",
+      "Claude Code",
+      "Codex",
+      "OpenSpec",
+      "JavaScript"
+    ],
+    "featured": true,
+    "year": 2026,
+    "role": "fullstack"
+  },
+  {
     "id": "admin-panel-nestjs",
-    "title": "Admin Panel — Backend API (NestJS)",
+    "title": "Admin Panel - Backend API (NestJS)",
+    "titleEs": "Admin Panel - API Backend (NestJS)",
     "description": "REST API built with NestJS and PostgreSQL on Neon, with file storage on Cloudinary. Implements Firebase authentication, input validation, protected routes, exception handling, and modular architecture following best practices.",
+    "descriptionEs": "API REST construida con NestJS y PostgreSQL en Neon, con almacenamiento de archivos en Cloudinary. Implementa autenticación con Firebase, validación de inputs, rutas protegidas, manejo de excepciones y arquitectura modular siguiendo buenas prácticas.",
     "image": "assets/img/real-estate-demo.jpeg",
     "liveUrl": "https://real-estate-vue-tobias-moreno.netlify.app",
     "repoUrl": "https://github.com/TobiasMoreno/real-estate-nest",
-    "tech": ["NestJS", "PostgreSQL", "Firebase", "Cloudinary", "TypeScript"],
+    "tech": [
+      "NestJS",
+      "PostgreSQL",
+      "Firebase",
+      "Cloudinary",
+      "TypeScript"
+    ],
     "featured": true,
     "year": 2024,
     "role": "backend"
   },
   {
     "id": "hr-nexus",
-    "title": "HR Management System — Nexus",
+    "title": "HR Management System - Nexus",
+    "titleEs": "Sistema de Gestión de Recursos Humanos - Nexus",
     "description": "Human resources management system developed with Angular and Spring Boot. Covers employee management, hiring workflows, and absence tracking, with a focus on efficiency and usability.",
+    "descriptionEs": "Sistema de gestión de recursos humanos desarrollado con Angular y Spring Boot. Cubre gestión de empleados, flujos de contratación y seguimiento de ausencias, con foco en eficiencia y usabilidad.",
     "image": "assets/img/hr-nexus.png",
     "liveUrl": "https://hr-management-system-tobias-moreno.netlify.app/",
     "repoUrl": "https://github.com/TobiasMoreno/hr-management-system",
-    "tech": ["Angular", "Spring Boot", "Java", "TypeScript"],
+    "tech": [
+      "Angular",
+      "Spring Boot",
+      "Java",
+      "TypeScript"
+    ],
     "featured": true,
     "year": 2023,
     "role": "fullstack"
@@ -26,11 +60,18 @@
   {
     "id": "portfolio",
     "title": "Portfolio",
-    "description": "This portfolio — built with Angular 21, Tailwind CSS v4, and a signal-based architecture. Features bilingual content (EN/ES), system-aware dark mode, lazy-loaded sections, and typed content models. Designed to communicate technical depth and product mindset.",
+    "titleEs": "Portafolio",
+    "description": "This portfolio - built with Angular 21, Tailwind CSS v4, and a signal-based architecture. Features bilingual content (EN/ES), system-aware dark mode, lazy-loaded sections, and typed content models. Designed to communicate technical depth and product mindset.",
+    "descriptionEs": "Este portafolio está construido con Angular 21, Tailwind CSS v4 y una arquitectura basada en signals. Incluye contenido bilingüe (EN/ES), modo oscuro adaptado al sistema, secciones lazy-loaded y modelos de contenido tipados. Está diseñado para comunicar profundidad técnica y mentalidad de producto.",
     "image": "assets/img/portfolio.png",
     "liveUrl": "https://portfolio-tobias-moreno.netlify.app",
     "repoUrl": "https://github.com/TobiasMoreno/portfolio-tobias-moreno",
-    "tech": ["Angular", "TypeScript", "Tailwind CSS", "Signals"],
+    "tech": [
+      "Angular",
+      "TypeScript",
+      "Tailwind CSS",
+      "Signals"
+    ],
     "featured": true,
     "year": 2025,
     "role": "frontend"

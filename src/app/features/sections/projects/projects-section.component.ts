@@ -3,6 +3,7 @@ import { NgOptimizedImage } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { LocaleService } from '../../../core/locale/locale.service';
 import { ContentService } from '../../../data/content.service';
+import type { Project } from '../../../shared/models';
 
 @Component({
   selector: 'app-projects-section',
@@ -23,13 +24,13 @@ import { ContentService } from '../../../data/content.service';
                           hover:-translate-y-1 hover:shadow-lg hover:border-[--color-accent]/50
                           transition-all duration-200 overflow-hidden">
             <div class="relative h-48 bg-[--color-border]">
-              <img [ngSrc]="project.image" fill [alt]="project.title"
+              <img [ngSrc]="project.image" fill [alt]="projectTitle(project)"
                    class="object-cover" />
             </div>
             <div class="flex flex-col gap-3 p-5 flex-1">
-              <h3 class="font-semibold text-[--color-fg]">{{ project.title }}</h3>
+              <h3 class="font-semibold text-[--color-fg]">{{ projectTitle(project) }}</h3>
               <p class="text-sm text-[--color-muted] leading-relaxed line-clamp-3">
-                {{ project.description }}
+                {{ projectDescription(project) }}
               </p>
               <div class="flex flex-wrap gap-1.5 mt-auto pt-3">
                 @for (tech of project.tech; track tech) {
@@ -72,4 +73,14 @@ export class ProjectsSectionComponent {
   protected readonly locale = inject(LocaleService);
   private readonly content = inject(ContentService);
   protected readonly projects = toSignal(this.content.getProjects(), { initialValue: [] });
+
+  protected projectTitle(project: Project): string {
+    return this.locale.locale() === 'es' ? (project.titleEs ?? project.title) : project.title;
+  }
+
+  protected projectDescription(project: Project): string {
+    return this.locale.locale() === 'es'
+      ? (project.descriptionEs ?? project.description)
+      : project.description;
+  }
 }
