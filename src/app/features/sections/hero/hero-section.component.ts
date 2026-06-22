@@ -67,7 +67,7 @@ import { LocaleService } from '../../../core/locale/locale.service';
 
         <div class="animate-fade-in-up-delay flex justify-center md:justify-end">
           <div class="relative w-64 h-64 sm:w-80 sm:h-80 rounded-2xl overflow-hidden border border-(--color-border)">
-            <img ngSrc="assets/img/Tobi.jpeg" fill priority alt="Tobias Moreno"
+            <img ngSrc="assets/img/Tobi.png" fill priority alt="Tobias Moreno"
                  class="object-cover object-top" />
           </div>
         </div>

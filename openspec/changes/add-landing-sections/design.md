@@ -68,7 +68,7 @@ Constraints:
 
 ### D7. NgOptimizedImage usage
 
-Every `<img>` uses `NgOptimizedImage` (`[ngSrc]`). Hero photo (`Tobi.jpeg`) gets `priority` attribute (LCP image). Project card images and the company logo get explicit `width` and `height`. No inline base64 images.
+Every `<img>` uses `NgOptimizedImage` (`[ngSrc]`). Hero photo (`Tobi.png`) gets `priority` attribute (LCP image). Project card images and the company logo get explicit `width` and `height`. No inline base64 images.
 
 ### D8. Section structure and IDs
 

@@ -62,7 +62,7 @@ contact.copy_email, contact.copied, contact.availability
 
 - [x] 5.1 Create `src/app/features/sections/hero/hero-section.component.ts` — standalone, OnPush
 - [x] 5.2 Template: `<section id="hero">` with two-column layout (text left, photo right on desktop; stacked on mobile)
-- [x] 5.3 Add profile photo using `NgOptimizedImage` with `ngSrc="assets/img/Tobi.jpeg"` `width="400"` `height="400"` `priority` `alt="Tobias Moreno"`
+- [x] 5.3 Add profile photo using `NgOptimizedImage` with `ngSrc="assets/img/Tobi.png"` `width="400"` `height="400"` `priority` `alt="Tobias Moreno"`
 - [x] 5.4 Render name, tagline (`locale.t('hero.tagline')`), description paragraph
 - [x] 5.5 CTA buttons: `[routerLink]="'/'" [fragment]="'projects'"` and `[routerLink]="'/'" [fragment]="'contact'"`
 - [x] 5.6 Social links row: GitHub, LinkedIn, CV ES (Google Drive link), CV EN (Google Drive link) — all `target="_blank" rel="noopener"`
