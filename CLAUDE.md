@@ -6,7 +6,7 @@ You are pair-programming on **Tobias Moreno's personal portfolio**, a static-dep
 
 This portfolio is a **job-search artifact**, not a hobby site. It's the first thing a recruiter or hiring manager will read about Tobias. Every change — content, structure, copy, performance — should be evaluated through the eyes of a hiring manager at a top-tier LatAm tech company (Mercado Libre is the lead example; also Globant, Despegar, Rappi, Nubank, Ualá).
 
-**Tobias's profile** — Backend / Product Engineer in fintech (Techforb / Creditú). Java + Spring Boot, NestJS, Angular, AWS Lambda, microservices, REST APIs, Resilience4j, structured logging, CI/CD. Works with AI agents through a Spec-Driven Development workflow.
+**Tobias's profile** — Backend / Product Engineer in fintech Creditú. Java + Spring Boot, NestJS, Angular, AWS Lambda, microservices, REST APIs, Resilience4j, structured logging, CI/CD. Works with AI agents through a Spec-Driven Development workflow.
 
 **Narrative the site must communicate** (without ever saying it explicitly — show, don't tell):
 1. Backend depth — APIs, microservices, integrations, performance.
@@ -141,7 +141,7 @@ Build: `@angular/build:application`. Dev: `npm start` (ng serve). Build: `npm ru
 - Tailwind v4 via PostCSS. Tokens are CSS custom properties (`--color-bg`, `--color-fg`, `--color-muted`, `--color-accent`, `--color-border`) defined in `styles.css` using `oklch()`.
 - Dark mode is a `.dark` class on `<html>`, applied pre-bootstrap by an inline script in `index.html` to prevent FOUC.
 - Both light and dark must look right. When you tweak a color or layout, verify both themes.
-- Use `class="bg-[--color-bg] text-[--color-fg]"` style token references — don't hardcode hex/oklch outside `styles.css`.
+- Reference tokens with Tailwind v4's CSS-variable shorthand using **parentheses**: `class="bg-(--color-bg) text-(--color-fg)"`. Don't hardcode hex/oklch outside `styles.css`. **Do not use the square-bracket form `bg-[--color-bg]`** — under Tailwind v4.2+ it compiles to the bare `--color-bg` (invalid CSS, silently dropped) instead of `var(--color-bg)`. Opacity modifiers work as expected: `bg-(--color-border)/10`.
 - The `section-container` utility class sets the standard section width / padding — reuse it, don't reinvent.
 
 ## Routing & SEO

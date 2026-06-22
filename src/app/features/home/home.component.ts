@@ -30,49 +30,49 @@ import { ContactSectionComponent } from '../sections/contact/contact-section.com
     @defer (on viewport) {
       <app-about-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="about" class="min-h-[400px]"></div>
     }
 
     @defer (on viewport) {
       <app-experience-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="experience" class="min-h-[400px]"></div>
     }
 
     @defer (on viewport) {
       <app-projects-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="projects" class="min-h-[400px]"></div>
     }
 
     @defer (on viewport) {
       <app-stack-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="stack" class="min-h-[400px]"></div>
     }
 
     @defer (on viewport) {
       <app-certifications-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="certifications" class="min-h-[400px]"></div>
     }
 
     @defer (on viewport) {
       <app-writing-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="writing" class="min-h-[400px]"></div>
     }
 
     @defer (on viewport) {
       <app-mindset-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="mindset" class="min-h-[400px]"></div>
     }
 
     @defer (on viewport) {
       <app-contact-section />
     } @placeholder {
-      <div class="min-h-[400px]"></div>
+      <div id="contact" class="min-h-[400px]"></div>
     }
   `,
 })

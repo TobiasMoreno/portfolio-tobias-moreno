@@ -9,6 +9,7 @@ const NAV_ITEMS = [
   { key: 'nav.experience', fragment: 'experience' },
   { key: 'nav.projects', fragment: 'projects' },
   { key: 'nav.stack', fragment: 'stack' },
+  { key: 'nav.certifications', fragment: 'certifications' },
   { key: 'nav.writing', fragment: 'writing' },
   { key: 'nav.contact', fragment: 'contact' },
 ] as const;
@@ -20,7 +21,7 @@ const THEME_CYCLE: Record<ThemeMode, ThemeMode> = { light: 'dark', dark: 'system
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [RouterLink, NgOptimizedImage],
   template: `
-    <header class="fixed top-0 left-0 right-0 z-50 h-14 border-b border-[--color-border] bg-[--color-bg]/80 backdrop-blur-sm">
+    <header class="fixed top-0 left-0 right-0 z-50 h-14 border-b border-(--color-border) bg-(--color-bg)/80 backdrop-blur-sm">
       <div class="mx-auto flex h-full max-w-5xl items-center justify-between px-6">
 
         <a [routerLink]="'/'" aria-label="Tobias Moreno — home" class="flex items-center hover:opacity-80 transition-opacity">
@@ -31,7 +32,7 @@ const THEME_CYCLE: Record<ThemeMode, ThemeMode> = { light: 'dark', dark: 'system
         <nav class="hidden md:flex items-center gap-6" aria-label="Main navigation">
           @for (item of navItems; track item.fragment) {
             <a [routerLink]="'/'" [fragment]="item.fragment"
-               class="text-sm text-[--color-muted] hover:text-[--color-fg] transition-colors duration-150">
+               class="text-sm text-(--color-muted) hover:text-(--color-fg) transition-colors duration-150">
               {{ locale.t(item.key) }}
             </a>
           }
@@ -40,12 +41,12 @@ const THEME_CYCLE: Record<ThemeMode, ThemeMode> = { light: 'dark', dark: 'system
         <div class="hidden md:flex items-center gap-2">
           <button (click)="toggleLocale()"
                   [attr.aria-label]="locale.t('locale.label')"
-                  class="text-xs font-medium text-[--color-muted] hover:text-[--color-fg] transition-colors px-2.5 py-1 rounded border border-[--color-border] hover:border-[--color-accent]">
+                  class="text-xs font-medium text-(--color-muted) hover:text-(--color-fg) transition-colors px-2.5 py-1 rounded border border-(--color-border) hover:border-(--color-accent)">
             {{ locale.locale() === 'en' ? 'ES' : 'EN' }}
           </button>
           <button (click)="cycleTheme()"
                   [attr.aria-label]="locale.t('theme.toggle.label')"
-                  class="text-[--color-muted] hover:text-[--color-fg] transition-colors p-1.5 rounded hover:bg-[--color-border]">
+                  class="text-(--color-muted) hover:text-(--color-fg) transition-colors p-1.5 rounded hover:bg-(--color-border)">
             @if (theme.resolvedTheme() === 'dark') {
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             } @else {
@@ -58,7 +59,7 @@ const THEME_CYCLE: Record<ThemeMode, ThemeMode> = { light: 'dark', dark: 'system
                 [attr.aria-expanded]="isMenuOpen()"
                 aria-controls="mobile-menu"
                 aria-label="Open menu"
-                class="md:hidden text-[--color-muted] hover:text-[--color-fg] p-2 transition-colors">
+                class="md:hidden text-(--color-muted) hover:text-(--color-fg) p-2 transition-colors">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </button>
       </div>
@@ -66,12 +67,12 @@ const THEME_CYCLE: Record<ThemeMode, ThemeMode> = { light: 'dark', dark: 'system
 
     @if (isMenuOpen()) {
       <div id="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu"
-           class="fixed inset-0 z-50 flex flex-col bg-[--color-bg] px-6 pt-5 pb-8 md:hidden">
+           class="fixed inset-0 z-50 flex flex-col bg-(--color-bg) px-6 pt-5 pb-8 md:hidden">
         <div class="flex items-center justify-between mb-10">
           <img [ngSrc]="theme.resolvedTheme() === 'dark' ? 'assets/img/logo-dark.png' : 'assets/img/logo-light.jpg'"
                width="32" height="32" alt="TM logo" class="rounded-sm" />
           <button (click)="isMenuOpen.set(false)" aria-label="Close menu"
-                  class="text-[--color-muted] hover:text-[--color-fg] p-2 transition-colors">
+                  class="text-(--color-muted) hover:text-(--color-fg) p-2 transition-colors">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
           </button>
         </div>
@@ -79,19 +80,19 @@ const THEME_CYCLE: Record<ThemeMode, ThemeMode> = { light: 'dark', dark: 'system
           @for (item of navItems; track item.fragment) {
             <a [routerLink]="'/'" [fragment]="item.fragment"
                (click)="isMenuOpen.set(false)"
-               class="text-2xl font-medium text-[--color-fg] hover:text-[--color-accent] transition-colors">
+               class="text-2xl font-medium text-(--color-fg) hover:text-(--color-accent) transition-colors">
               {{ locale.t(item.key) }}
             </a>
           }
         </nav>
-        <div class="mt-auto flex items-center gap-3 pt-8 border-t border-[--color-border]">
+        <div class="mt-auto flex items-center gap-3 pt-8 border-t border-(--color-border)">
           <button (click)="toggleLocale()"
-                  class="text-sm font-medium text-[--color-muted] hover:text-[--color-fg] transition-colors px-3 py-1.5 rounded border border-[--color-border]">
+                  class="text-sm font-medium text-(--color-muted) hover:text-(--color-fg) transition-colors px-3 py-1.5 rounded border border-(--color-border)">
             {{ locale.locale() === 'en' ? 'ES' : 'EN' }}
           </button>
           <button (click)="cycleTheme()"
                   [attr.aria-label]="locale.t('theme.toggle.label')"
-                  class="text-[--color-muted] hover:text-[--color-fg] transition-colors p-2 rounded">
+                  class="text-(--color-muted) hover:text-(--color-fg) transition-colors p-2 rounded">
             @if (theme.resolvedTheme() === 'dark') {
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
             } @else {

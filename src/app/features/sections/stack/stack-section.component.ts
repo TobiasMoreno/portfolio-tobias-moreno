@@ -22,23 +22,23 @@ function groupBy<T>(arr: T[], key: (item: T) => string): Map<string, T[]> {
   template: `
     <section id="stack" class="section-container animate-fade-in-up">
       <div class="mb-12">
-        <h2 class="text-3xl font-bold tracking-tight text-[--color-fg] mb-3">
+        <h2 class="text-3xl font-bold tracking-tight text-(--color-fg) mb-3">
           {{ locale.t('stack.title') }}
         </h2>
-        <p class="text-[--color-muted]">{{ locale.t('stack.subtitle') }}</p>
+        <p class="text-(--color-muted)">{{ locale.t('stack.subtitle') }}</p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         @for (category of categoryOrder; track category) {
           @if (groups().get(category); as skillsInCategory) {
             <div class="flex flex-col gap-4">
-              <h3 class="text-xs font-semibold text-[--color-muted] uppercase tracking-widest">
+              <h3 class="text-xs font-semibold text-(--color-muted) uppercase tracking-widest">
                 {{ locale.t('stack.' + category) }}
               </h3>
               <div class="flex flex-wrap gap-2">
                 @for (skill of skillsInCategory; track skill.id) {
-                  <span class="px-3 py-1.5 rounded-lg text-sm border border-[--color-border]
-                               bg-[--color-border]/30 text-[--color-fg]">
+                  <span class="px-3 py-1.5 rounded-lg text-sm border border-(--color-border)
+                               bg-(--color-border)/30 text-(--color-fg)">
                     {{ skill.name }}
                   </span>
                 }

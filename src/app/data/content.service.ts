@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import type { Experience, Post, Project, Skill } from '../shared/models';
+import type { Certification, Experience, Post, Project, Skill } from '../shared/models';
 
 @Injectable({ providedIn: 'root' })
 export class ContentService {
@@ -21,5 +21,9 @@ export class ContentService {
 
   getPosts(): Observable<Post[]> {
     return this.http.get<Post[]>('/assets/data/posts.json');
+  }
+
+  getCertifications(): Observable<Certification[]> {
+    return this.http.get<Certification[]>('/assets/data/certifications.json');
   }
 }
