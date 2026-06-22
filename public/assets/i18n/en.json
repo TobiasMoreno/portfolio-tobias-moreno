@@ -27,7 +27,7 @@
   },
   "hero": {
     "tagline": "Backend Engineer · Product Engineer",
-    "description": "I build REST APIs, microservices, and integrations in fintech environments. I care about system design, user impact, and real outcomes — not just closing tickets.",
+    "description": "I build backend systems in fintech: APIs, microservices, and integrations designed to scale, withstand load, and fail gracefully. I focus on real user impact, not closing tickets. I work with AI agents and Spec-Driven Development to iterate faster without trading away quality.",
     "cta_projects": "View Projects",
     "cta_contact": "Get in touch",
     "social_github": "GitHub",
