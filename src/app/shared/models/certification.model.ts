@@ -8,5 +8,5 @@ export interface Certification {
   titleEs?: string;
   description: string;
   descriptionEs?: string;
-  url: string;
+  url?: string;
 }

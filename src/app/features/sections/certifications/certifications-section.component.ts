@@ -58,11 +58,15 @@ const FILTER_TYPES = [
 
             <div>
               <h3 class="text-sm font-semibold text-(--color-fg)">
-                <a [href]="certification.url" target="_blank" rel="noopener"
-                   class="inline-flex items-center gap-1.5 transition-colors hover:text-(--color-accent)">
-                  {{ certificationTitle(certification) }}
-                  <span aria-hidden="true">-></span>
-                </a>
+                @if (certification.url) {
+                  <a [href]="certification.url" target="_blank" rel="noopener"
+                     class="inline-flex items-center gap-1.5 transition-colors hover:text-(--color-accent)">
+                    {{ certificationTitle(certification) }}
+                    <span aria-hidden="true">-></span>
+                  </a>
+                } @else {
+                  <span>{{ certificationTitle(certification) }}</span>
+                }
               </h3>
               <p class="mt-2 text-sm leading-6 text-(--color-muted)">
                 {{ certificationDescription(certification) }}

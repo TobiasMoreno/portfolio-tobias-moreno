@@ -4,7 +4,7 @@
     "experience": "Experiencia",
     "projects": "Proyectos",
     "stack": "Stack",
-    "certifications": "Certificaciones",
+    "certifications": "Formación",
     "writing": "Journal",
     "contact": "Contacto"
   },
@@ -26,8 +26,8 @@
     "location": "Córdoba, Argentina"
   },
   "hero": {
-    "tagline": "Backend Engineer · Product Engineer",
-    "description": "Construyo sistemas backend en fintech: APIs, microservicios e integraciones pensados para escalar, resistir carga y fallar de forma controlada. Me enfoco en el impacto real para el usuario, no en cerrar tickets. Trabajo con agentes de IA y Spec-Driven Development para iterar más rápido sin resignar calidad.",
+    "tagline": "Software Developer · Backend / Fintech",
+    "description": "Software Developer con experiencia en producto fintech, desarrollo de APIs REST, microservicios, integraciones con servicios externos y sistemas en producción. Trabajo principalmente en backend, con foco en soluciones mantenibles, robustas y orientadas a producto.",
     "cta_projects": "Ver proyectos",
     "cta_contact": "Contactarme",
     "social_github": "GitHub",
@@ -39,46 +39,46 @@
   },
   "about": {
     "title": "Sobre mí",
-    "paragraph_1": "Soy Backend Engineer y Product Engineer en Córdoba, Argentina, trabajando en Creditú en un contexto fintech. Mi trabajo diario involucra construir y evolucionar APIs REST, microservicios e integraciones externas — con foco en rendimiento, resiliencia y observabilidad.",
-    "paragraph_2": "Pienso el software desde los dos lados: el técnico y el de producto. Me importa el impacto para el usuario, no solo la corrección técnica. Uso logs, métricas y feedback para tomar mejores decisiones, iterar rápido y evitar sobreingenierizar.",
-    "chip_product": "Mentalidad de producto",
-    "chip_observability": "Observabilidad",
-    "chip_impact": "Impacto sobre complejidad",
+    "paragraph_1": "Soy Software Developer en Córdoba, Argentina, trabajando sobre producto fintech. Diseño y mantengo APIs REST, microservicios e integraciones con servicios externos para flujos usados por brokers, inmobiliarias y equipos internos.",
+    "paragraph_2": "Me enfoco en construir software mantenible y previsible en producción: validaciones de negocio, resiliencia frente a proveedores externos, trazabilidad, debugging, testing y automatización del flujo de desarrollo. Uso IA y Spec-Driven Development como apoyo para reducir ambigüedad, anticipar edge cases, generar pruebas y documentar decisiones técnicas.",
+    "chip_product": "Producto fintech",
+    "chip_observability": "Trazabilidad",
+    "chip_impact": "APIs REST",
     "chip_resilience": "Resiliencia",
-    "chip_async": "Pensamiento asincrónico",
-    "chip_iterate": "Iterar rápido"
+    "chip_async": "Integraciones externas",
+    "chip_iterate": "IA + SDD"
   },
   "mindset": {
     "title": "Cómo pienso",
-    "subtitle": "Principios de ingeniería que aplico todos los días.",
-    "card1_title": "Pensar en problemas, no en tickets",
-    "card1_desc": "Antes de escribir una línea de código, me pregunto qué problema estamos resolviendo y por qué le importa al usuario.",
-    "card2_title": "Evaluar trade-offs deliberadamente",
-    "card2_desc": "Calidad, simplicidad, velocidad y mantenibilidad siempre están en tensión. Nombro el trade-off y tomo una decisión consciente.",
-    "card3_title": "Usar métricas, logs y feedback",
-    "card3_desc": "El comportamiento en producción es la mejor fuente de verdad. Uso logs estructurados y observabilidad para tomar mejores decisiones.",
-    "card4_title": "Iterativo antes que perfecto",
-    "card4_desc": "Una solución funcional entregada hoy es mejor que una solución perfecta que nunca se entrega. Scopeo pequeño, entrego y mejoro.",
-    "card5_title": "Impacto sobre complejidad innecesaria",
-    "card5_desc": "Si la complejidad extra no agrega valor proporcional, es un pasivo. Mantengo las cosas tan simples como el problema lo permite."
+    "subtitle": "Principios de ingeniería que aplico en el trabajo diario.",
+    "card1_title": "Reducir ambigüedad antes de implementar",
+    "card1_desc": "Antes de escribir código, busco entender requisitos, contratos, edge cases y comportamiento esperado.",
+    "card2_title": "Diseñar para producción",
+    "card2_desc": "No alcanza con que funcione localmente. Pienso en trazabilidad, errores de proveedores, timeouts, reintentos y debugging.",
+    "card3_title": "Cuidar mantenibilidad",
+    "card3_desc": "Prefiero soluciones claras, separadas por responsabilidades y fáciles de extender por el equipo.",
+    "card4_title": "Automatizar el flujo",
+    "card4_desc": "Uso pipelines, tests, linting, deploys con tags y documentación para reducir fricción y errores repetibles.",
+    "card5_title": "Usar IA con criterio propio",
+    "card5_desc": "Uso agentes y SDD para acelerar análisis, validación y documentación, manteniendo decisión técnica propia."
   },
   "experience": {
     "title": "Experiencia",
-    "present": "Presente",
+    "present": "Actualidad",
     "current_badge": "Actual",
-    "highlights_title": "En qué trabajé",
-    "stack_title": "Stack"
+    "highlights_title": "Responsabilidades e impacto",
+    "stack_title": "Tecnologías"
   },
   "projects": {
-    "title": "Proyectos",
-    "subtitle": "Trabajo seleccionado que muestra mi criterio técnico.",
+    "title": "Proyectos relevantes",
+    "subtitle": "Proyectos personales alineados a backend, agentes de IA y diseño técnico.",
     "demo": "Demo en vivo",
     "repo": "Repositorio",
     "view_all": "Ver todo en GitHub"
   },
   "stack": {
     "title": "Stack tecnológico",
-    "subtitle": "Herramientas y prácticas con las que trabajo.",
+    "subtitle": "Tecnologías, prácticas y herramientas presentes en mi trabajo actual.",
     "backend": "Backend",
     "frontend": "Frontend",
     "cloud": "Cloud / DevOps",
@@ -87,9 +87,9 @@
   },
   "certifications": {
     "eyebrow": "Formación complementaria",
-    "title": "Certificaciones con dirección",
-    "subtitle": "Formación complementaria orientada a inteligencia artificial, agentes, desarrollo asistido por IA y comunicación profesional. Estas certificaciones acompañan mi enfoque actual como Backend / Product Engineer, combinando fundamentos técnicos, criterio de producto y workflows asistidos por agentes para diseñar soluciones más claras, mantenibles y escalables.",
-    "filter_label": "Filtrar certificaciones por tipo",
+    "title": "Formación y certificaciones",
+    "subtitle": "Formación orientada a programación, inteligencia artificial aplicada al desarrollo, agentes, comunicación profesional y habilidades de trabajo. Complementa mi experiencia práctica en backend, producto fintech y workflows asistidos por IA.",
+    "filter_label": "Filtrar formación por tipo",
     "filter_all": "Todos",
     "type_ai_dev": "Desarrollo asistido por IA",
     "type_agents": "Agentes de IA",
@@ -98,16 +98,16 @@
   },
   "writing": {
     "title": "Journal",
-    "subtitle": "Aprendizajes técnicos, decisiones profesionales y errores reales. Todo en público, todo sin filtro.",
-    "fallback": "Aprendizajes técnicos, decisiones profesionales y errores reales. Todo en público, todo sin filtro.",
+    "subtitle": "Aprendizajes técnicos, decisiones profesionales y notas sobre desarrollo.",
+    "fallback": "Aprendizajes técnicos, decisiones profesionales y notas sobre desarrollo.",
     "cta": "Leer mi journal"
   },
   "contact": {
     "title": "Hablemos",
-    "subtitle": "Abierto a nuevas oportunidades, colaboraciones y conversaciones interesantes.",
-    "location": "Córdoba, Argentina",
+    "subtitle": "Abierto a conversaciones profesionales, oportunidades y colaboraciones técnicas.",
+    "location": "Córdoba, Argentina / Remoto",
     "copy_email": "Copiar email",
     "copied": "¡Copiado!",
-    "availability": "Disponible para roles full-time y proyectos freelance."
+    "availability": "Software Developer enfocado en backend, producto fintech e integraciones."
   }
 }

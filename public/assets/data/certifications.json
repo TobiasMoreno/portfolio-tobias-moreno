@@ -1,5 +1,24 @@
 [
   {
+    "id": "utn-programming-degree",
+    "code": "UTN",
+    "type": "academic",
+    "title": "University Higher Technician in Programming",
+    "titleEs": "Tecnicatura Superior Universitaria en Programación",
+    "description": "Universidad Tecnológica Nacional - Facultad Regional Córdoba. Graduated. March 2023 - December 2025.",
+    "descriptionEs": "Universidad Tecnológica Nacional - Facultad Regional Córdoba. Graduado. Marzo 2023 - diciembre 2025.",
+    "url": "https://drive.google.com/file/d/1fgBLJsvAkHfcyZpreRD7tZRRYFmt0dQa/view?usp=sharing"
+  },
+  {
+    "id": "hr-degree",
+    "code": "RRHH",
+    "type": "academic",
+    "title": "University Higher Technician in Human Resources",
+    "titleEs": "Tecnicatura Superior Universitaria en Recursos Humanos",
+    "description": "Escuela Superior de Comercio Manuel Belgrano. Graduated. 2019 - 2021.",
+    "descriptionEs": "Escuela Superior de Comercio Manuel Belgrano. Graduado. 2019 - 2021."
+  },
+  {
     "id": "claude-101",
     "code": "C101",
     "type": "ai-dev",
@@ -7,7 +26,7 @@
     "titleEs": "Claude 101",
     "description": "Foundations for using Claude in productivity, analysis, and AI-assisted software development workflows.",
     "descriptionEs": "Fundamentos de uso de Claude aplicado a productividad, análisis y desarrollo asistido por IA.",
-    "url": "https://https://drive.google.com/file/d/193f_F7HbDAaYTGuVwQKsZ74l3CDNQav4/view?usp=sharing"
+    "url": "https://drive.google.com/file/d/193f_F7HbDAaYTGuVwQKsZ74l3CDNQav4/view?usp=sharing"
   },
   {
     "id": "claude-ai-fluency",
@@ -40,23 +59,13 @@
     "url": "https://drive.google.com/file/d/1c3sHZMD6cbSxxfMsJmrGexkzh8ZxdiVB/view?usp=sharing"
   },
   {
-    "id": "utn-degree",
-    "code": "UTN",
-    "type": "academic",
-    "title": "Degree Certificate",
-    "titleEs": "Constancia de Título",
-    "description": "University Technician in Programming - UTN.",
-    "descriptionEs": "Técnico Universitario en Programación - UTN.",
-    "url": "https://drive.google.com/file/d/1fgBLJsvAkHfcyZpreRD7tZRRYFmt0dQa/view?usp=sharing"
-  },
-  {
     "id": "opi-2-oratoria",
     "code": "OPI",
     "type": "professional",
-    "title": "OPI 2.0 — Public Speaking",
-    "titleEs": "OPI 2.0 — Oratoria",
-    "description": "Public speaking and communication training (OPI 2.0, Franco Pisso): structuring a message, speaking with clarity and confidence, and communicating technical work to any audience.",
-    "descriptionEs": "Formación en oratoria y comunicación (OPI 2.0, Franco Pisso): estructurar un mensaje, hablar con claridad y seguridad, y comunicar el trabajo técnico ante cualquier audiencia.",
+    "title": "OPI 2.0 - Public Speaking",
+    "titleEs": "OPI 2.0 - Oratoria",
+    "description": "Public speaking and communication training: structuring a message, speaking with clarity, and communicating technical work to different audiences.",
+    "descriptionEs": "Formación en oratoria y comunicación: estructurar un mensaje, hablar con claridad y comunicar trabajo técnico ante distintas audiencias.",
     "url": "https://drive.google.com/file/d/1sJPvFnXaJWFtBiK2G-1J_z2VYVgmyssd/view?usp=sharing"
   }
 ]
