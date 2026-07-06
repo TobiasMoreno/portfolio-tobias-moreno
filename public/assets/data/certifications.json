@@ -79,6 +79,46 @@
     "url": "https://drive.google.com/file/d/1BlFTfVVARj2U9TWR9zVcR0baRWxWCB5w/view?usp=drive_link"
   },
   {
+    "id": "google-ai-for-research-and-insights",
+    "code": "GOO",
+    "type": "google",
+    "title": "AI for Research and Insights",
+    "titleEs": "IA para Investigación y Obtención de Insights",
+    "description": "Google training on using artificial intelligence to support research, analyze information, identify patterns, and produce actionable insights.",
+    "descriptionEs": "Formación de Google sobre el uso de inteligencia artificial para apoyar investigaciones, analizar información, identificar patrones y obtener insights accionables.",
+    "url": "https://drive.google.com/file/d/1OMVlRAytUaTwEpl7CyWZD2qe2OgTB4Dc/view?usp=drive_link"
+  },
+  {
+    "id": "google-ai-for-writing-and-communicating",
+    "code": "GOO",
+    "type": "google",
+    "title": "AI for Writing and Communicating",
+    "titleEs": "IA para Escritura y Comunicación",
+    "description": "Google training on using artificial intelligence to plan, draft, refine, and adapt written communication for different audiences and purposes.",
+    "descriptionEs": "Formación de Google sobre el uso de inteligencia artificial para planificar, redactar, mejorar y adaptar comunicaciones escritas a distintas audiencias y objetivos.",
+    "url": "https://drive.google.com/file/d/1DvNQ5eNz_mOkSOhWLshpK5FtrmThDk2z/view?usp=drive_link"
+  },
+  {
+    "id": "google-ai-for-content-creation",
+    "code": "GOO",
+    "type": "google",
+    "title": "AI for Content Creation",
+    "titleEs": "IA para Creación de Contenido",
+    "description": "Google training on using artificial intelligence to ideate, produce, refine, and adapt content for different formats, audiences, and communication goals.",
+    "descriptionEs": "Formación de Google sobre el uso de inteligencia artificial para idear, producir, mejorar y adaptar contenido a distintos formatos, audiencias y objetivos de comunicación.",
+    "url": "https://drive.google.com/file/d/1J3MAdJCU1U5qnBkiGsmhQjzPrii5LzbM/view?usp=drive_link"
+  },
+  {
+    "id": "google-ai-for-data-analysis",
+    "code": "GOO",
+    "type": "google",
+    "title": "AI for Data Analysis",
+    "titleEs": "IA para Análisis de Datos",
+    "description": "Google training on using artificial intelligence to explore data, identify patterns, interpret results, and communicate data-driven insights.",
+    "descriptionEs": "Formación de Google sobre el uso de inteligencia artificial para explorar datos, identificar patrones, interpretar resultados y comunicar conclusiones basadas en datos.",
+    "url": "https://drive.google.com/file/d/1VeDGQc6hshqwSh4ldg0NWImBF3_297gX/view?usp=drive_link"
+  },
+  {
     "id": "soft-skills",
     "code": "PRO",
     "type": "professional",
