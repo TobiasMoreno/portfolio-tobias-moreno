@@ -49,6 +49,36 @@
     "url": "https://drive.google.com/file/d/1UV4XRkVGsqDtYqtEpmQf9FeX8U0oOgLt/view?usp=sharing"
   },
   {
+    "id": "google-cybersecurity-foundations",
+    "code": "GOO",
+    "type": "google",
+    "title": "Foundations of Cybersecurity",
+    "titleEs": "Fundamentos en Ciberseguridad",
+    "description": "Google training covering core cybersecurity concepts, common threats, security frameworks, and the responsibilities of security professionals.",
+    "descriptionEs": "Formación de Google sobre conceptos esenciales de ciberseguridad, amenazas comunes, marcos de seguridad y responsabilidades de los profesionales del sector.",
+    "url": "https://drive.google.com/file/d/19GU0coHgol-wW7eK70u90_q4tlHq8fDv/view?usp=drive_link"
+  },
+  {
+    "id": "google-ai-for-brainstorming",
+    "code": "GOO",
+    "type": "google",
+    "title": "AI for Brainstorming",
+    "titleEs": "IA para Brainstorming",
+    "description": "Google training on using artificial intelligence to generate, expand, organize, and evaluate ideas during creative processes.",
+    "descriptionEs": "Formación de Google sobre el uso de inteligencia artificial para generar, ampliar, organizar y evaluar ideas durante procesos creativos.",
+    "url": "https://drive.google.com/file/d/1Frgr75iafKiCwEGKe0TSn1tnUz3KZzUw/view?usp=drive_link"
+  },
+  {
+    "id": "google-ai-fundamentals",
+    "code": "GOO",
+    "type": "google",
+    "title": "AI Fundamentals",
+    "titleEs": "Fundamentos de IA",
+    "description": "Google training covering the foundations of artificial intelligence, its capabilities, responsible use, and practical applications.",
+    "descriptionEs": "Formación de Google sobre los fundamentos de la inteligencia artificial, sus capacidades, su uso responsable y sus aplicaciones prácticas.",
+    "url": "https://drive.google.com/file/d/1BlFTfVVARj2U9TWR9zVcR0baRWxWCB5w/view?usp=drive_link"
+  },
+  {
     "id": "soft-skills",
     "code": "PRO",
     "type": "professional",

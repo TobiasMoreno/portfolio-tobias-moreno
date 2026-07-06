@@ -1,4 +1,4 @@
-export type CertificationType = 'ai-dev' | 'agents' | 'professional' | 'academic';
+export type CertificationType = 'ai-dev' | 'agents' | 'google' | 'professional' | 'academic';
 
 export interface Certification {
   id: string;
