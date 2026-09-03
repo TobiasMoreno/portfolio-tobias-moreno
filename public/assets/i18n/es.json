@@ -93,6 +93,7 @@
     "filter_all": "Todos",
     "type_ai_dev": "Desarrollo asistido por IA",
     "type_agents": "Agentes de IA",
+    "type_aws": "AWS",
     "type_google": "Google",
     "type_professional": "Habilidades profesionales",
     "type_academic": "Formación académica"

@@ -49,6 +49,16 @@
     "url": "https://drive.google.com/file/d/1UV4XRkVGsqDtYqtEpmQf9FeX8U0oOgLt/view?usp=sharing"
   },
   {
+    "id": "aws-certification",
+    "code": "AWS",
+    "type": "aws",
+    "title": "AWS Certification",
+    "titleEs": "Certificación de AWS",
+    "description": "Amazon Web Services credential covering cloud concepts, core services, security, architecture, and best practices.",
+    "descriptionEs": "Credencial de Amazon Web Services sobre conceptos de nube, servicios principales, seguridad, arquitectura y buenas prácticas.",
+    "url": "https://drive.google.com/file/d/1edX0mXPEl4xc9oNnF-cU547ITCiX2JGv/view?usp=drive_link"
+  },
+  {
     "id": "google-cybersecurity-foundations",
     "code": "GOO",
     "type": "google",
@@ -77,6 +87,16 @@
     "description": "Google training covering the foundations of artificial intelligence, its capabilities, responsible use, and practical applications.",
     "descriptionEs": "Formación de Google sobre los fundamentos de la inteligencia artificial, sus capacidades, su uso responsable y sus aplicaciones prácticas.",
     "url": "https://drive.google.com/file/d/1BlFTfVVARj2U9TWR9zVcR0baRWxWCB5w/view?usp=drive_link"
+  },
+  {
+    "id": "google-ai-for-app-building",
+    "code": "GOO",
+    "type": "google",
+    "title": "AI for App Building",
+    "titleEs": "IA para Creación de Aplicaciones",
+    "description": "Google training on using artificial intelligence to plan, prototype, refine, and support application-building workflows.",
+    "descriptionEs": "Formación de Google sobre el uso de inteligencia artificial para planificar, prototipar, mejorar y apoyar flujos de creación de aplicaciones.",
+    "url": "https://drive.google.com/file/d/1n7kg6gwa8gd1ZepqTn_nFMfqbJhzg-ZD/view?usp=drive_link"
   },
   {
     "id": "google-ai-for-research-and-insights",

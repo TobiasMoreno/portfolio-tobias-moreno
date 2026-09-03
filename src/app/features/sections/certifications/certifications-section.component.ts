@@ -7,6 +7,7 @@ import type { Certification, CertificationType } from '../../../shared/models';
 const FILTER_TYPES = [
   { value: 'ai-dev', labelKey: 'certifications.type_ai_dev' },
   { value: 'agents', labelKey: 'certifications.type_agents' },
+  { value: 'aws', labelKey: 'certifications.type_aws' },
   { value: 'google', labelKey: 'certifications.type_google' },
   { value: 'professional', labelKey: 'certifications.type_professional' },
   { value: 'academic', labelKey: 'certifications.type_academic' },
