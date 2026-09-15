@@ -59,6 +59,16 @@
     "url": "https://drive.google.com/file/d/1edX0mXPEl4xc9oNnF-cU547ITCiX2JGv/view?usp=drive_link"
   },
   {
+    "id": "aws-agentic-ai",
+    "code": "AWS",
+    "type": "aws",
+    "title": "AWS Agentic AI",
+    "titleEs": "AWS Agentic AI",
+    "description": "AWS training focused on agentic AI concepts, autonomous workflows, and building AI agents with cloud services.",
+    "descriptionEs": "Formación de AWS sobre conceptos de IA agéntica, flujos autónomos y construcción de agentes de IA con servicios en la nube.",
+    "url": "https://drive.google.com/file/d/1ZBFGA70Hdb1iLaL3mI2G-wnzeXQYNmqx/view?usp=drive_link"
+  },
+  {
     "id": "google-cybersecurity-foundations",
     "code": "GOO",
     "type": "google",
